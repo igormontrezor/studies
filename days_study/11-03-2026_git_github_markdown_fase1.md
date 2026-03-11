@@ -132,7 +132,42 @@ gh repo edit igormontrezor/studies --visibility public --accept-visibility-chang
 gh repo view igormontrezor/studies
 ```
 
-#### **🔄 Fluxo Diário**
+#### **�️ Remover Arquivos**
+```bash
+# Remover arquivo do diretório e do Git
+git rm arquivo.txt
+
+# Remover arquivo apenas do Git (manter no diretório)
+git rm --cached arquivo.txt
+
+# Remover arquivo já deletado do Git
+git rm arquivo.txt
+
+# Remover múltiplos arquivos
+git rm arquivo1.txt arquivo2.txt arquivo3.txt
+
+# Remover por padrão (wildcard)
+git rm *.log
+git rm temp_*
+
+# Forçar remoção de arquivo modificado
+git rm -f arquivo.txt
+
+# Remover diretório inteiro
+git rm -r pasta/
+
+# Remover arquivo do GitHub (após commit e push)
+git rm arquivo.txt
+git commit -m "Remover arquivo.txt"
+git push
+
+# Remover arquivo que já foi deletado localmente
+git add -A
+git commit -m "Limpar arquivos deletados"
+git push
+```
+
+#### **�🔄 Fluxo Diário**
 ```bash
 # 1. Atualizar com GitHub
 git pull
