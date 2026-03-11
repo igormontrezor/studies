@@ -1,0 +1,5 @@
+dia=input('dia: ')
+mes=input('mes: ')
+ano=input('ano: ')
+#print('ola', nome,'a sua idade e:',idade)
+print(f'voce nacseu: {dia}/{mes}/{ano}. correto?')
