@@ -118,6 +118,15 @@ git log
 git show
 ```
 
+#### **🔄 GitHub CLI**
+```bash
+# Tornar repositório público
+gh repo edit igormontrezor/studies --visibility public --accept-visibility-change-consequences
+
+# Ver informações do repositório
+gh repo view igormontrezor/studies
+```
+
 #### **🔄 Fluxo Diário**
 ```bash
 # 1. Atualizar com GitHub
