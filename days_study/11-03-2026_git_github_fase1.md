@@ -42,6 +42,15 @@ git add arquivo.txt
 # Adicionar todos os arquivos
 git add .
 
+# Adicionar .gitignore
+git add .gitignore
+
+# Criar .gitignore
+echo "arquivo.txt" > .gitignore
+echo "*.log" >> .gitignore
+echo "__pycache__/" >> .gitignore
+```
+
 # Ver mudanças antes de commit
 git diff
 ```
