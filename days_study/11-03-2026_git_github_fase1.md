@@ -77,6 +77,11 @@ git pull
 
 # Primeiro envio (definir branch principal)
 git push -u origin master
+
+# Verificar conformidade entre máquina e GitHub
+git fetch origin
+git status
+git diff HEAD origin/master
 ```
 
 #### **⏮️ Desfazer**
