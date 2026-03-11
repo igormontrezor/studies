@@ -1,13 +1,13 @@
 # 📚 Diário de Estudos
 
-## 📅 11-03-2026 | 🎯 git_github_fase1
-![alt text](imagens\git_github.png)
+## 📅 11-03-2026 | 🎯 git_github_markdown_fase1
+![alt text](../imagens/git_github.png)
 ---
 
-## � Resumo
+## 📝 Resumo
 - **Duração:**
-- **Conteúdo:**
-- **Fontes:**
+- **Conteúdo:** Comandos Git essenciais e formatação Markdown básica
+- **Fontes:** Documentação oficial, GitHub Guides
 
 ---
 
@@ -151,37 +151,117 @@ git commit -m "O que foi feito"
 git push
 ```
 
-> **💡 Estes 15 comandos resolvem 90% das suas necessidades!** 🚀
--
--
--
+> **💡Comandos Markdown Essenciais** 🚀
 
 ---
 
-## 🐛 Desafios
--
--
--
+### **📝 Markdown Básico**
 
+#### **🔤 Formatação de Texto**
+```markdown
+# Título 1
+## Título 2
+### Título 3
+
+**Texto em negrito**
+*Texto em itálico*
+~~Texto riscado~~
+`Código inline`
+```
+
+#### **📋 Listas**
+```markdown
+# Lista não ordenada
+- Item 1
+- Item 2
+  - Subitem 2.1
+  - Subitem 2.2
+
+# Lista ordenada
+1. Primeiro item
+2. Segundo item
+3. Terceiro item
+
+# Lista de tarefas
+- [ ] Tarefa pendente
+- [x] Tarefa concluída
+```
+
+#### **🔗 Links e Imagens**
+```markdown
+# Link
+[Texto do link](https://exemplo.com)
+
+# Imagem
+![Texto alternativo](caminho/da/imagem.jpg)
+
+# Link em imagem
+[![Texto alternativo](caminho/da/imagem.jpg)](https://exemplo.com)
+```
+
+#### **📊 Tabelas**
+```markdown
+| Coluna 1 | Coluna 2 | Coluna 3 |
+|----------|----------|----------|
+| Dado 1   | Dado 2   | Dado 3   |
+| Dado 4   | Dado 5   | Dado 6   |
+
+# Alinhamento
+| Esquerda | Centro | Direita |
+|:---------|:------:|--------:|
+| Texto    | Texto  | Texto   |
+| Dados    | Dados  | Dados   |
+```
+
+#### **💻 Código**
+```markdown
+# Código inline
+Use o comando `git status` para verificar.
+
+# Bloco de código
+```bash
+git add .
+git commit -m "Mensagem"
+```
+
+# Código com sintaxe destacada
+```python
+def hello_world():
+    print("Hello, World!")
+```
+```
+
+#### **📌 Citações e Destaques**
+```markdown
+# Citação
+> Isso é uma citação importante.
+> Pode ter múltiplas linhas.
+
+# Citação aninhada
+> Citação principal
+>> Citação aninhada
+
+# Linha horizontal
 ---
+***
+___
+```
 
-##  Arquivos Práticos
--
+#### **🔧 Outros Elementos**
+```markdown
+# Texto com HTML
+<u>Sublinhado</u>
+<mark>Destacado</mark>
 
----
+# Emojis
+:rocket: 🚀
+:book: 📚
+:computer: 💻
 
-## � Progresso
-- **Conceito:** /10
-- **Prática:** /10
-- **Aplicação:** /10
+# Referências
+Veja a [seção de comandos][git] para mais detalhes.
 
----
+[git]: #-comandos-git-essenciais
 
-## 🎯 Próximos Passos
-- [ ]
-- [ ]
-- [ ]
-
----
 
 *Criado em: 11/03/2026 13:10*
