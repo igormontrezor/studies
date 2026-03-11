@@ -86,12 +86,6 @@ Inclui também um projeto dedicado:
 5. ⏳ **Fase 5** (sistema integrado)
 6. ⏳ **Fase 6** (produção e monetização)
 
-## 💰 SUAS METAS FINANCEIRAS
-- [ ] **3 meses:** Primeiro projeto freelance vendido (US$50-200)
-- [ ] **6 meses:** US$500-2,000/mês (2-3 projetos)
-- [ ] **12 meses:** US$3,000+/mês (clientes recorrentes + internacional)
-- [ ] **18 meses:** US$5,000-10,000+/mês (sistema completo + produtos digitais)
-
 ---
 
 *Última atualização: 11/03/2026*
