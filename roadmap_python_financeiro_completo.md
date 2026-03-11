@@ -1,4 +1,3 @@
-teste git / github
 # 🚀 Roadmap Python para Sistemas Financeiros e Criptomoedas - COMPLETO
 
 ---
