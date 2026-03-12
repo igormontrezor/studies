@@ -49,6 +49,61 @@ git add .gitignore
 echo "arquivo.txt" > .gitignore
 echo "*.log" >> .gitignore
 echo "__pycache__/" >> .gitignore
+
+# Criar .gitignore completo para projetos Python
+cat > .gitignore << EOF
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-*
+.spyder*
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Dados
+*.csv
+*.xlsx
+*.json
+*.parquet
+*.h5
+*.pkl
+data/
+models/
+logs/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+
+# Segurança
+secrets.json
+api_keys.txt
+.env.local
+credentials.json
+
+# Financeiro
+trading_configs.json
+backtest_results/
+portfolio_data/
+market_data/
+EOF
 ```
 
 # Ver mudanças antes de commit
