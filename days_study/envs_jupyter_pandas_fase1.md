@@ -90,6 +90,15 @@ conda create -n meu_projeto python=3.14
 python -m venv meu_projeto_env
 ```
 
+#### **Criar Notebook pelo Shell**
+```bash
+# Criar notebook vazio
+echo '{"cells": [], "metadata": {}, "nbformat": 4, "nbformat_minor": 5}' > notebook_novo.ipynb
+
+# Criar notebook com célula básica
+echo '{"cells": [{"cell_type": "code", "execution_count": null, "metadata": {}, "outputs": [], "source": ["# Novo Notebook\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n"]}], "metadata": {}, "nbformat": 4, "nbformat_minor": 5}' > notebook_com_celula.ipynb
+```
+
 #### **Gerenciar Environments**
 ```bash
 # Listar (conda)
