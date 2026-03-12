@@ -42,70 +42,6 @@ git add arquivo.txt
 # Adicionar todos os arquivos
 git add .
 
-# Adicionar .gitignore
-git add .gitignore
-
-# Criar .gitignore
-echo "arquivo.txt" > .gitignore
-echo "*.log" >> .gitignore
-echo "__pycache__/" >> .gitignore
-
-# Criar .gitignore completo para projetos Python
-cat > .gitignore << EOF
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-env/
-ENV/
-.venv/
-.env/
-
-# IDEs
-.vscode/
-.idea/
-*.sublime-*
-.spyder*
-
-# Jupyter
-.ipynb_checkpoints
-*.ipynb
-
-# Dados
-*.csv
-*.xlsx
-*.json
-*.parquet
-*.h5
-*.pkl
-data/
-models/
-logs/
-
-# Sistema
-.DS_Store
-Thumbs.db
-*.log
-*.tmp
-*.bak
-
-# Segurança
-secrets.json
-api_keys.txt
-.env.local
-credentials.json
-
-# Financeiro
-trading_configs.json
-backtest_results/
-portfolio_data/
-market_data/
-EOF
-```
-
 # Ver mudanças antes de commit
 git diff
 ```
@@ -124,59 +60,24 @@ git commit -am "Mensagem rápida"
 # Adicionar repositório remoto
 git remote add origin https://github.com/user/repo.git
 
-# Ver repositórios remotos configurados
+# Ver repositórios remotos
 git remote -v
 
 # Remover repositório remoto
 git remote remove origin
-git remote rm origin
 
-# Alterar URL do repositório remoto
-git remote set-url origin https://github.com/user/novo-repo.git
-
-# Enviar para GitHub (primeira vez)
-git push -u origin master
-git push --set-upstream origin master
-
-# Enviar para GitHub (demais vezes)
-git push
-
-# Enviar branch específica
-git push origin nome-branch
+# Enviar para GitHub
+git push -u origin main  # primeira vez
+git push               # demais vezes
 
 # Puxar mudanças do GitHub
 git pull
-git pull origin master
 
 # Baixar sem mesclar
 git fetch
-git fetch origin
 
-# Primeiro envio (definir branch principal)
-git push -u origin master
-
-# Verificar conformidade entre máquina e GitHub
-git fetch origin
-git status
-git diff HEAD origin/master
-
-# Clonar repositório existente
-git clone https://github.com/user/repo.git
-git clone https://github.com/user/repo.git nome-da-pasta
-
-# Sincronizar com repositório remoto
-git remote update
-git remote show origin
-
-# Enviar todos os branches locais
-git push --all origin
-
-# Enviar tags
-git push --tags
-
-# Forçar push (cuidado - reescreve histórico)
-git push --force origin master
-git push -f origin master
+# Forçar push (cuidado)
+git push --force origin main
 ```
 
 #### **⏮️ Desfazer**
@@ -189,21 +90,24 @@ git reset --soft HEAD~1
 
 # Reverter commit específico
 git revert hash-do-commit
+
+# Remover Git completamente da pasta
+# Linux/Mac:
+rm -rf .git
+git clean -fd  # remove arquivos não rastreados
+
+# Windows (PowerShell):
+Remove-Item -Recurse -Force .git
+
+# Windows (CMD):
+rmdir /s /q .git
 ```
 
 #### **🌿 Branches**
 ```bash
-# Ver branches locais
-git branch
-
-# Ver branches locais e remotas
-git branch -a
-
-# Ver branch atual
-git branch --show-current
-
-# Criar nova branch (sem mudar para ela)
-git branch nova-branch
+# Ver branches
+git branch        # locais
+git branch -a    # locais e remotas
 
 # Criar e mudar para nova branch
 git checkout -b nova-branch
@@ -213,187 +117,181 @@ git switch -c nova-branch
 git checkout nome-branch
 git switch nome-branch
 
-# Voltar para branch principal
-git checkout master
-git checkout main
-git switch main
-
 # Renomear branch atual
 git branch -m novo-nome
 
-# Renomear branch específica
-git branch -m nome-antigo nome-novo
+# Deletar branch
+git branch -d nome-branch    # local
+git push origin --delete nome-branch  # remota
 
-# Deletar branch local
-git branch -d nome-branch
-git branch -D nome-branch  # forçar
-
-# Deletar branch remota
-git push origin --delete nome-branch
-
-# Juntar branches (merge)
-git checkout main
+# Juntar branches
 git merge nova-branch
-
-# Juntar sem commit (fast-forward)
-git merge --ff-only nova-branch
-
-# Cancelar merge em conflito
-git merge --abort
-
-# Ver branches com último commit
-git branch -v
-
-# Ver branches mescladas
-git branch --merged
-
-# Ver branches não mescladas
-git branch --no-merged
 ```
 
 #### **📊 Histórico**
 ```bash
-# Ver commits recentes
-git log --oneline
-
-# Ver histórico completo
-git log
+# Ver commits
+git log --oneline  # recentes
+git log           # completo
 
 # Ver mudanças específicas
 git show
+
+# Ver gráfico de branches
+git log --graph --oneline --all
 ```
 
 #### **🔄 GitHub CLI**
 ```bash
-# Criar novo repositório no GitHub
-gh repo create nome-do-repo
-
-# Criar repositório privado
-gh repo create nome-do-repo --private
-
-# Criar repositório público
+# Criar repositório
 gh repo create nome-do-repo --public
 
-# Criar repositório com descrição
-gh repo create nome-do-repo --description "Descrição do repositório"
-
-# Criar repositório com README
-gh repo create nome-do-repo --readme
-
-# Criar repositório e clonar imediatamente
-gh repo create nome-do-repo --clone
-
-# Criar repositório no diretório atual
-gh repo create . --public
-
-# Criar repositório com todas as opções
-gh repo create nome-do-repo \
-  --public \
-  --description "Meu novo projeto" \
-  --readme \
-  --clone
-
-# Ver informações do repositório
+# Ver informações
 gh repo view
 
-# Ver informações do repositório de outro usuário
-gh repo view usuario/nome-do-repo
+# Criar issue/PR
+gh issue create --title "Título"
+gh pr create --title "PR"
 
-# Listar seus repositórios
-gh repo list
-
-# Listar repositórios com filtro
-gh repo list --limit 10
-gh repo list --source github
-
-# Editar repositório
-gh repo edit --visibility public
-gh repo edit --description "Nova descrição"
-gh repo edit --homepage https://seusite.com
-
-# Deletar repositório
-gh repo delete nome-do-repo
-
-# Criar issue
-gh issue create --title "Título da issue" --body "Descrição detalhada"
-
-# Criar pull request
-gh pr create --title "Título do PR" --body "Descrição do PR"
-
-# Autenticar no GitHub
+# Autenticar
 gh auth login
 gh auth status
 ```
 
-#### **🌐 Criar Repositório Manual (sem CLI)**
+#### **🌐 Criar Repositório Manual**
 ```bash
-# 1. Criar repositório no site do GitHub manualmente
-# Acesse: https://github.com/new
+# 1. Criar no site: https://github.com/new
 
-# 2. Configurar repositório local
+# 2. Configurar local
 git init
 git add .
 git commit -m "Primeiro commit"
 
-# 3. Conectar ao repositório remoto
-git remote add origin https://github.com/usuario/nome-do-repo.git
+# 3. Conectar
+git remote add origin https://github.com/user/repo.git
 git branch -M main
 
-# 4. Enviar para GitHub
+# 4. Enviar
 git push -u origin main
 ```
 
 #### **🔐 Autenticação GitHub CLI**
 ```bash
-# Fazer login
+# Login/Logout
 gh auth login
-
-# Ver status da autenticação
-gh auth status
-
-# Fazer logout
 gh auth logout
 
-# Ver token atual
+# Status e token
+gh auth status
 gh auth token
-
-# Refrescar token
-gh auth refresh
 ```
 
-#### **�️ Remover Arquivos**
+#### **📦 GitHub LFS - Arquivos Grandes (>100MB)**
+```bash
+# Instalar Git LFS
+git lfs install
+
+# Adicionar tipos de arquivos grandes
+git lfs track "*.csv"
+git lfs track "*.xlsx"
+git lfs track "*.parquet"
+
+# Commit do .gitattributes
+git add .gitattributes
+git commit -m "Configure Git LFS"
+
+# Adicionar arquivo grande
+git add arquivo_grande.csv
+git commit -m "Add large dataset"
+git push
+
+# Baixar arquivos LFS
+git lfs pull
+
+# Verificar arquivos baixados
+ls -la data/
+```
+
+#### **🚀 GitHub Releases - Download Direto**
+```bash
+# Via curl/wget
+wget https://github.com/user/repo/releases/download/v1.0/arquivo.csv
+curl -O https://github.com/user/repo/releases/download/v1.0/arquivo.csv
+
+# Via Python
+import pandas as pd
+url = "https://github.com/user/repo/releases/download/v1.0/arquivo.csv"
+df = pd.read_csv(url)
+
+# Download múltiplos arquivos
+import requests
+files = [
+    "survey_results_public.csv",
+    "survey_results_schema.csv"
+]
+
+for file in files:
+    url = f"https://github.com/user/repo/releases/download/v1.0/{file}"
+    df = pd.read_csv(url)
+    print(f"Arquivo {file} carregado: {len(df)} linhas")
+```
+
+#### **📋 Criar GitHub Release (Passo a Passo)**
+1. **Acessar**: https://github.com/user/repo/releases
+2. **Criar Release**: Clique em "Create a new release"
+3. **Configurar**:
+   - Tag: `v1.0` (exemplo)
+   - Title: "Dataset Release v1.0"
+   - Description: "Contém arquivos CSV para análise"
+4. **Upload**: Arraste arquivos para "Release assets"
+5. **Publicar**: Clique em "Publish release"
+
+#### **🔄 Exemplo Completo - Workflow com Dados Grandes**
+```bash
+# 1. Setup inicial
+git clone https://github.com/user/repo.git
+cd repo
+git lfs install
+
+# 2. Configurar LFS para CSV
+git lfs track "*.csv"
+git add .gitattributes
+git commit -m "Add CSV to LFS tracking"
+
+# 3. Adicionar dataset grande
+wget https://exemplo.com/dataset_grande.csv
+git add dataset_grande.csv
+git commit -m "Add large dataset"
+git push
+
+# 4. Criar release para acesso direto
+# (via interface web ou GitHub CLI)
+gh release create v1.0 dataset_grande.csv \
+  --title "Dataset v1.0" \
+  --notes "Dataset para análise de dados"
+
+# 5. Download por outros usuários
+# Via LFS:
+git lfs pull
+
+# Via Release:
+wget https://github.com/user/repo/releases/download/v1.0/dataset_grande.csv
+```
+
+#### **🗑️ Remover Arquivos**
 ```bash
 # Remover arquivo do diretório e do Git
 git rm arquivo.txt
 
-# Remover arquivo apenas do Git (manter no diretório)
+# Remover arquivo apenas do Git
 git rm --cached arquivo.txt
 
-# Remover arquivo já deletado do Git
-git rm arquivo.txt
-
-# Remover múltiplos arquivos
-git rm arquivo1.txt arquivo2.txt arquivo3.txt
-
-# Remover por padrão (wildcard)
-git rm *.log
-git rm temp_*
-
-# Forçar remoção de arquivo modificado
-git rm -f arquivo.txt
-
-# Remover diretório inteiro
+# Remover pasta
 git rm -r pasta/
 
-# Remover arquivo do GitHub (após commit e push)
-git rm arquivo.txt
-git commit -m "Remover arquivo.txt"
-git push
-
-# Remover arquivo que já foi deletado localmente
+# Remover arquivos já deletados
 git add -A
 git commit -m "Limpar arquivos deletados"
-git push
 ```
 
 #### **�� Fluxo Diário**
