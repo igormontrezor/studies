@@ -124,11 +124,33 @@ git commit -am "Mensagem rápida"
 # Adicionar repositório remoto
 git remote add origin https://github.com/user/repo.git
 
-# Enviar para GitHub
+# Ver repositórios remotos configurados
+git remote -v
+
+# Remover repositório remoto
+git remote remove origin
+git remote rm origin
+
+# Alterar URL do repositório remoto
+git remote set-url origin https://github.com/user/novo-repo.git
+
+# Enviar para GitHub (primeira vez)
+git push -u origin master
+git push --set-upstream origin master
+
+# Enviar para GitHub (demais vezes)
 git push
+
+# Enviar branch específica
+git push origin nome-branch
 
 # Puxar mudanças do GitHub
 git pull
+git pull origin master
+
+# Baixar sem mesclar
+git fetch
+git fetch origin
 
 # Primeiro envio (definir branch principal)
 git push -u origin master
@@ -137,6 +159,24 @@ git push -u origin master
 git fetch origin
 git status
 git diff HEAD origin/master
+
+# Clonar repositório existente
+git clone https://github.com/user/repo.git
+git clone https://github.com/user/repo.git nome-da-pasta
+
+# Sincronizar com repositório remoto
+git remote update
+git remote show origin
+
+# Enviar todos os branches locais
+git push --all origin
+
+# Enviar tags
+git push --tags
+
+# Forçar push (cuidado - reescreve histórico)
+git push --force origin master
+git push -f origin master
 ```
 
 #### **⏮️ Desfazer**
@@ -225,11 +265,100 @@ git show
 
 #### **🔄 GitHub CLI**
 ```bash
-# Tornar repositório público
-gh repo edit igormontrezor/studies --visibility public --accept-visibility-change-consequences
+# Criar novo repositório no GitHub
+gh repo create nome-do-repo
+
+# Criar repositório privado
+gh repo create nome-do-repo --private
+
+# Criar repositório público
+gh repo create nome-do-repo --public
+
+# Criar repositório com descrição
+gh repo create nome-do-repo --description "Descrição do repositório"
+
+# Criar repositório com README
+gh repo create nome-do-repo --readme
+
+# Criar repositório e clonar imediatamente
+gh repo create nome-do-repo --clone
+
+# Criar repositório no diretório atual
+gh repo create . --public
+
+# Criar repositório com todas as opções
+gh repo create nome-do-repo \
+  --public \
+  --description "Meu novo projeto" \
+  --readme \
+  --clone
 
 # Ver informações do repositório
-gh repo view igormontrezor/studies
+gh repo view
+
+# Ver informações do repositório de outro usuário
+gh repo view usuario/nome-do-repo
+
+# Listar seus repositórios
+gh repo list
+
+# Listar repositórios com filtro
+gh repo list --limit 10
+gh repo list --source github
+
+# Editar repositório
+gh repo edit --visibility public
+gh repo edit --description "Nova descrição"
+gh repo edit --homepage https://seusite.com
+
+# Deletar repositório
+gh repo delete nome-do-repo
+
+# Criar issue
+gh issue create --title "Título da issue" --body "Descrição detalhada"
+
+# Criar pull request
+gh pr create --title "Título do PR" --body "Descrição do PR"
+
+# Autenticar no GitHub
+gh auth login
+gh auth status
+```
+
+#### **🌐 Criar Repositório Manual (sem CLI)**
+```bash
+# 1. Criar repositório no site do GitHub manualmente
+# Acesse: https://github.com/new
+
+# 2. Configurar repositório local
+git init
+git add .
+git commit -m "Primeiro commit"
+
+# 3. Conectar ao repositório remoto
+git remote add origin https://github.com/usuario/nome-do-repo.git
+git branch -M main
+
+# 4. Enviar para GitHub
+git push -u origin main
+```
+
+#### **🔐 Autenticação GitHub CLI**
+```bash
+# Fazer login
+gh auth login
+
+# Ver status da autenticação
+gh auth status
+
+# Fazer logout
+gh auth logout
+
+# Ver token atual
+gh auth token
+
+# Refrescar token
+gh auth refresh
 ```
 
 #### **�️ Remover Arquivos**
