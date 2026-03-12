@@ -331,6 +331,8 @@ c:\Projects Python\
 
 # 📊 FASE 2: ANÁLISE FINANCEIRA APLICADA (12-16 SEMANAS) - 0% COMPLETO
 
+#### **📅 Ir ao final do arquivo para acompanhar a estrutura de pastas e entender mais um pouco de Git/GitHub quando começar a construir projetos (após Fase 2):**
+
 ---
 
 > **📋 Pré-requisito:** Git + GitHub básico (veja abaixo)

@@ -20,13 +20,102 @@
 #### **Jupyter Lab**
 - Ambiente web para executar código e ver resultados imediatos
 - Magic commands: `%` (linha) e `%%` (célula)
-- Ativação: `cd "c:\Projects Python\envs\data_scientist_1\Scripts".activate` depois `cd 'c:\Projects Python\projects\data_scientist_1\notebook'` e `jupyter lab`
+- Ativação: `cd 'c:\Projects Python\envs\data_scientist_1'Scripts\activate` depois `cd 'c:\Projects Python\projects\data_scientist_1\notebook'` e `jupyter lab`
 
 #### **Pandas**
 - DataFrames são contêineres de Series
 - Series são objetos de DataFrame
 - Manipulação e análise de dados
 - Integração com matplotlib para visualização
+
+---
+
+## 🐍 Criando Ambientes Virtuais
+
+### **Passo a Passo Completo**
+
+1. **Criar ambiente virtual:**
+   ```bash
+   python -m venv nome-do-venv
+   ```
+
+2. **Ativar ambiente virtual:**
+   ```bash
+   cd nome-do-venv
+   Scripts\activate
+   ```
+
+3. **Instalar pacotes necessários:**
+   ```bash
+   pip install jupyter ipykernel matplotlib pandas
+   ```
+
+4. **⭐ REGISTRAR KERNEL DO JUPYTER (OBRIGATÓRIO):**
+   ```bash
+   python -m ipykernel install --user --name=nome-do-kernel --display-name="Python (nome-do-kernel)"
+   ```
+
+5. **Iniciar Jupyter Lab:**
+   ```bash
+   cd pasta-dos-notebooks
+   jupyter lab
+   ```
+
+### **Importante:**
+- **Todo ambiente virtual que for usar com Jupyter precisa ter um kernel registrado!**
+- Criar venv **não** cria kernel automaticamente
+- Sem kernel registrado, o Jupyter não encontrará os pacotes do ambiente
+
+### **📝 Resumo Conceitual**
+
+#### **Ambientes Virtuais**
+- Isolam dependências por projeto
+- Evitam conflitos entre versões
+- Facilitam reprodução de resultados
+- Podem ser compartilhados via requirements.txt
+
+#### **Tipos de Environments**
+- **Conda**: Gerenciador de pacotes e environments
+- **venv**: Nativo do Python, mais leve
+- **virtualenv**: Similar ao venv com mais recursos
+
+### **🛠️ Comandos Práticos**
+
+#### **Criar Environment**
+```bash
+# Conda
+conda create -n meu_projeto python=3.14
+
+# venv
+python -m venv meu_projeto_env
+```
+
+#### **Gerenciar Environments**
+```bash
+# Listar (conda)
+conda env list
+
+# Ativar (conda)
+conda activate meu_projeto
+
+# Ativar (venv - Windows)
+meu_projeto_env\Scripts\activate
+
+# Desativar
+conda deactivate
+```
+
+#### **Dependências**
+```bash
+# Instalar pacotes
+pip install pandas numpy matplotlib
+
+# Salvar dependências
+pip freeze > requirements.txt
+
+# Instalar de requirements
+pip install -r requirements.txt
+```
 
 ---
 
