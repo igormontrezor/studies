@@ -98,17 +98,62 @@ git revert hash-do-commit
 
 #### **🌿 Branches**
 ```bash
-# Ver branches
+# Ver branches locais
 git branch
+
+# Ver branches locais e remotas
+git branch -a
+
+# Ver branch atual
+git branch --show-current
+
+# Criar nova branch (sem mudar para ela)
+git branch nova-branch
 
 # Criar e mudar para nova branch
 git checkout -b nova-branch
+git switch -c nova-branch
+
+# Mudar para branch existente
+git checkout nome-branch
+git switch nome-branch
 
 # Voltar para branch principal
 git checkout master
+git checkout main
+git switch main
 
-# Juntar branches
+# Renomear branch atual
+git branch -m novo-nome
+
+# Renomear branch específica
+git branch -m nome-antigo nome-novo
+
+# Deletar branch local
+git branch -d nome-branch
+git branch -D nome-branch  # forçar
+
+# Deletar branch remota
+git push origin --delete nome-branch
+
+# Juntar branches (merge)
+git checkout main
 git merge nova-branch
+
+# Juntar sem commit (fast-forward)
+git merge --ff-only nova-branch
+
+# Cancelar merge em conflito
+git merge --abort
+
+# Ver branches com último commit
+git branch -v
+
+# Ver branches mescladas
+git branch --merged
+
+# Ver branches não mescladas
+git branch --no-merged
 ```
 
 #### **📊 Histórico**
@@ -167,7 +212,7 @@ git commit -m "Limpar arquivos deletados"
 git push
 ```
 
-#### **�🔄 Fluxo Diário**
+#### **�� Fluxo Diário**
 ```bash
 # 1. Atualizar com GitHub
 git pull
