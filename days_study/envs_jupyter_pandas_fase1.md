@@ -196,6 +196,14 @@ df = pd.read_csv('arquivo.csv')
 df = pd.read_excel('arquivo.xlsx')
 
 # Criar DataFrame do zero
+people = {
+    "first": ["Corey", "Jane", "John"],
+    "last": ["Schafer", "Doe", "Doe"],
+    "email": ["CoreySchafer@gmail.com", "JaneDoe@email.com", "JohnDoe@email.com"]
+}
+
+df = pd.DataFrame(people)
+
 df = pd.DataFrame({
     'coluna1': [1, 2, 3],
     'coluna2': ['A', 'B', 'C']
@@ -270,150 +278,152 @@ df.drop(columns=['col1', 'col2'])
 # Remover linhas
 df.drop(0)                    # Por índice
 df.drop_duplicates()          # Remover duplicatas
-```
 
-#### **📊 Agrupar e Agregar**
-```python
-# Group by
-df.groupby('coluna').mean()
-df.groupby('coluna').sum()
-df.groupby('coluna').count()
-
-# Múltiplas agregações
-df.groupby('coluna').agg({
-    'col1': 'mean',
-    'col2': 'sum',
-    'col3': 'count'
-})
-
-# Pivot table
-df.pivot_table(values='valor', index='categoria', columns='ano', aggfunc='mean')
-```
-
-#### **🔢 Lidar com Dados Faltantes**
-```python
-# Ver valores nulos
-df.isnull()
-df.isnull().sum()
-
-# Remover nulos
-df.dropna()
-df.dropna(subset=['coluna'])
-
-# Preencher nulos
-df.fillna(0)
-df.fillna(method='ffill')      # Forward fill
-df.fillna(method='bfill')      # Backward fill
-df['coluna'].fillna(df['coluna'].mean())
-```
-
-#### **📈 Trabalhar com Datas**
-```python
-# Converter para datetime
-df['data'] = pd.to_datetime(df['data'])
-
-# Extrair partes da data
-df['ano'] = df['data'].dt.year
-df['mes'] = df['data'].dt.month
-df['dia'] = df['data'].dt.day
-df['dia_semana'] = df['data'].dt.dayofweek
-
-# Filtros de data
-df[df['data'] > '2024-01-01']
-df[df['data'].dt.year == 2024]
-
-# Definir data como índice
-df.set_index('data', inplace=True)
-```
-
-#### **📊 Visualizações Rápidas**
-```python
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-# Gráficos básicos com pandas
-df['coluna'].plot()                    # Linha
-df['coluna'].hist()                    # Histograma
-df.plot.scatter(x='col1', y='col2')   # Dispersão
-df.plot.box()                         # Boxplot
-
-# Com matplotlib/ seaborn
-plt.figure(figsize=(10, 6))
-sns.scatterplot(data=df, x='col1', y='col2')
-plt.show()
-```
-
-#### **💾 Salvar e Exportar**
-```python
-# Salvar em CSV
-df.to_csv('saida.csv', index=False)
-
-# Salvar em Excel
-df.to_excel('saida.xlsx', index=False)
-
-# Salvar em JSON
-df.to_json('saida.json')
-
-# Salvar em Parquet (mais eficiente)
-df.to_parquet('saida.parquet')
+# Remover linhas com condição
+df.drop(df[df['coluna'] > 10].index)
 ```
 
 ---
 
-### **🔄 Fluxo de Trabalho Típico**
+### **🔧 Métodos e Funções Principais**
 
+#### **📊 replace() - Substituir valores**
 ```python
-# 1. Importar bibliotecas
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
+# Substituir valores específicos
+df['first'].replace('Corey', 'Chris')
 
-# 2. Carregar dados
-df = pd.read_csv('dados.csv')
+# Exemplo com people: substituir nomes
+df['first'].replace({'Corey': 'Chris', 'Jane': 'Mary'})
 
-# 3. Explorar dados
-print(df.head())
-print(df.info())
-print(df.describe())
-
-# 4. Limpar dados
-df = df.dropna()
-df['data'] = pd.to_datetime(df['data'])
-
-# 5. Análise
-media = df['valor'].mean()
-agrupado = df.groupby('categoria')['valor'].sum()
-
-# 6. Visualizar
-df['valor'].plot(title='Valores ao longo do tempo')
-plt.show()
-
-# 7. Salvar resultados
-agrupado.to_csv('resultados.csv')
+# Substituir em todo DataFrame
+df.replace('Doe', 'Smith')
 ```
 
----
-
-### **⚡ Dicas de Performance**
-
+#### **�️ map() - Aplicar função elemento por elemento**
 ```python
-# Usar .loc em vez de encadeamento
-df.loc[df['coluna'] > 10, 'nova'] = 'alto'
+# Mapear valores
+df['first'].map({'Corey': 1, 'Jane': 2, 'John': 3})
 
-# Evitar loops com pandas
-# Ruim: for row in df.iterrows()
-# Bom: df.apply() ou vectorização
+# Exemplo com people: converter para maiúsculas
+df['first'].map(str.upper)
 
-# Usar tipagem adequada
-df['coluna'] = df['coluna'].astype('category')  # Para poucos valores únicos
-df['numero'] = pd.to_numeric(df['numero'])      # Converter para numérico
+# Contar caracteres
+df['email'].map(len)
+```
 
+#### **⚡ apply() - Aplicar função em Series/DataFrame**
+```python
+# Em Series (coluna)
+df['email'].apply(len)              # Contar caracteres
+df['first'].apply(str.upper)        # Maiúsculas
+
+# Exemplo com people: tamanho do email
+df['email'].apply(lambda x: len(x.split('@')[0]))  # Tamanho antes do @
+
+# Em DataFrame
+df.apply(len, axis='columns')        # Por linhas
+```
+
+#### **🎯 loc[] - Seleção por label**
+```python
+# Seleção por índice/nome
+df.loc[0]                           # Primeira pessoa (Corey)
+df.loc[0:2, 'first']                # Nomes das primeiras 3 pessoas
+
+# Exemplo com people: filtrar e modificar
+df.loc[df['last'] == 'Doe', 'status'] = 'mesmo_sobrenome'
+```
+
+#### **� iloc[] - Seleção por posição**
+```python
+# Por índice numérico (posição)
+df.iloc[0]                          # Primeira linha
+df.iloc[0:2]                        # Primeiras 2 linhas
+df.iloc[0, 1]                       # Linha 0, coluna 1 (last)
+
+# Exemplo com people: selecionar específicos
+df.iloc[[0, 2], [0, 2]]             # Corey e John (nome e email)
+```
+
+#### **🎯 value_counts() - Contar valores**
+```python
+# Contar ocorrências de cada valor
+df['coluna'].value_counts()
+
+# Exemplo com people: contar sobrenomes
+df['last'].value_counts()
+```
+
+#### **� contains() - Verificar se contém texto**
+```python
+# Verificar se texto contém substring
+df['coluna'].str.contains('texto', na=False)
+
+# Exemplo com people: encontrar quem tem 'gmail'
+df['email'].str.contains('gmail', na=False)
+```
+
+#### **📋 isin() - Verificar se está em lista**
+```python
+# Verificar se valores estão em uma lista
+nomes = ['Corey', 'John']
+df['first'].isin(nomes)
+
+# Exemplo com people: filtrar sobrenomes específicos
+df[df['last'].isin(['Schafer', 'Doe'])]
+```
+
+#### **🏷️ rename() - Renomear colunas/índices**
+```python
+# Renomear colunas
+df.rename(columns={'first': 'nome', 'last': 'sobrenome'})
+
+# Exemplo com people: padronizar para português
+df.rename(columns={'first': 'primeiro_nome', 'last': 'ultimo_nome', 'email': 'e_mail'})
+```
+
+#### **📐 set_index() - Definir coluna como índice**
+```python
+# Definir coluna como índice
+df.set_index('email')
+
+# Exemplo com people: usar email como índice
+df.set_index('email')  # emails viram índice
+```
+
+#### **↩️ reset_index() - Resetar índice**
+```python
+# Transformar índice em coluna
+df.reset_index()
+
+# Exemplo com people: voltar índice numérico
+df.reset_index()  # email volta a ser coluna
+```
+
+#### **🔧 str methods - Métodos de string**
+```python
+# Converter para minúsculas/maiúsculas
+df['first'].str.lower()
+df['first'].str.upper()
+
+# Substituir texto
+df['email'].str.replace('gmail', 'outlook')
+
+# Exemplo com people: extrair domínio do email
+df['email'].str.split('@').str[1]  # gmail.com, email.com, etc.
+```
+
+#### **📊 sort_values() - Ordenar dados**
+```python
+# Ordenar por coluna
+df.sort_values('first')
+
+# Exemplo com people: ordenar por sobrenome
+df.sort_values('last', ascending=False)
+```
 # Memory usage
 df.memory_usage()
 df.info(memory_usage='deep')
-```
-
-> **💡 Estes comandos resolvem 95% das suas necessidades com Pandas e Jupyter!** 🚀
 
 ---
 
