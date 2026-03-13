@@ -247,9 +247,72 @@ c:\Projects Python\
   - [ ] `df.plot()`, `df.hist()`, `df.boxplot()`
   > **📊 Poder Adquirido:** Gráficos que contam histórias!
 - [ ] **Exercícios Práticos**
-  - [ ] Criar DataFrame com OHLCV de BTC/ETH (cripto) e/ou SPY (S&P500)
-  - [ ] Calcular retornos (simples/log) e volatilidade (rolling)
-  - [ ] Plotar candlesticks + SMA/EMA (Plotly)
+  - [ ] **Criar DataFrame com OHLCV de BTC/ETH (cripto) e/ou SPY (S&P500)**
+    - 📺 **Vídeos Tutoriais:**
+      - **Python Finance:** [DataReader yfinance](https://www.youtube.com/watch?v=KjM1Uy_Xl-k) - Como baixar dados financeiros
+      - **CodeWithMorris:** [Pandas Finance](https://www.youtube.com/watch?v=OUsCpFz8I6E) - Manipulação de dados OHLCV
+      - **Socratica:** [Análise Técnica Python](https://www.youtube.com/watch?v=4-2p2q2G5o) - Indicadores técnicos
+    - 📚 **Bibliotecas necessárias:**
+      ```python
+      import pandas as pd
+      import yfinance as yf  # pip install yfinance
+      import plotly.graph_objects as go  # pip install plotly
+      ```
+    - 💡 **Código base:**
+      ```python
+      # Baixar dados
+      tickers = ['BTC-USD', 'ETH-USD', 'SPY']
+      df = yf.download(tickers, start='2024-01-01', interval='1d')
+
+      # Estrutura OHLCV (Open, High, Low, Close, Volume)
+      btc_data = df['BTC-USD'][['Open', 'High', 'Low', 'Close', 'Volume']]
+      ```
+
+  - [ ] **Calcular retornos (simples/log) e volatilidade (rolling)**
+    - 📺 **Vídeos Tutoriais:**
+      - **QuantCourse:** [Retornos Financeiros](https://www.youtube.com/watch?v=7b5J_p8q0sI) - Cálculo de retornos
+      - **DataCamp:** [Volatilidade Rolling](https://www.youtube.com/watch?v=2p2k4aJ5X4k) - Volatilidade com janela móvel
+      - **Python para Finanças:** [Log vs Simple Returns](https://www.youtube.com/watch?v=R-s2b_w2L-w) - Diferenças e aplicações
+    - 💡 **Código base:**
+      ```python
+      # Retorno simples
+      df['retorno_simples'] = df['Close'].pct_change()
+
+      # Retorno logarítmico
+      df['retorno_log'] = np.log(df['Close'] / df['Close'].shift(1))
+
+      # Volatilidade rolling (janela de 20 dias)
+      df['volatilidade'] = df['retorno_simples'].rolling(window=20).std() * np.sqrt(252)
+      ```
+
+  - [ ] **Plotar candlesticks + SMA/EMA (Plotly)**
+    - 📺 **Vídeos Tutoriais:**
+      - **Plotly:** [Candlestick Charts](https://www.youtube.com/watch?v=06kFqJ8_4vM) - Gráficos de velas
+      - **Coding Entrepeneur:** [SMA/EMA Python](https://www.youtube.com/watch?v=8F7k2k2q5Jk) - Médias móveis
+      - **Algovibes:** [Technical Indicators](https://www.youtube.com/watch?v=J5i2X5Z5J3E) - Indicadores completos
+    - 💡 **Código base:**
+      ```python
+      # SMA (Simple Moving Average)
+      df['SMA_20'] = df['Close'].rolling(window=20).mean()
+      df['SMA_50'] = df['Close'].rolling(window=50).mean()
+
+      # EMA (Exponential Moving Average)
+      df['EMA_20'] = df['Close'].ewm(span=20).mean()
+      df['EMA_50'] = df['Close'].ewm(span=50).mean()
+
+      # Candlestick com Plotly
+      fig = go.Figure(data=go.Candlestick(
+          x=df.index,
+          open=df['Open'],
+          high=df['High'],
+          low=df['Low'],
+          close=df['Close']
+      ))
+
+      # Adicionar médias móveis
+      fig.add_trace(go.Scatter(x=df.index, y=df['SMA_20'], name='SMA 20'))
+      fig.add_trace(go.Scatter(x=df.index, y=df['EMA_20'], name='EMA 20'))
+      ```
   > **🎯 Competência a Dominar:** Análise técnica completa!
 
 ### Semana 5-6: Estruturas de Dados Financeiras (OOP essencial)
