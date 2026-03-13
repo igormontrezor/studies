@@ -421,6 +421,61 @@ df.sort_values('first')
 # Exemplo com people: ordenar por sobrenome
 df.sort_values('last', ascending=False)
 ```
+
+#### **🔗 concat() - Combinar DataFrames**
+```python
+# Combinar DataFrames (substituto do append)
+pd.concat([df1, df2])
+
+# Exemplo com people: adicionar nova pessoa
+nova_pessoa = pd.DataFrame({'first': ['Alice'], 'last': ['Smith'], 'email': ['alice@email.com']})
+df_completo = pd.concat([df, nova_pessoa], ignore_index=True)
+
+# Adicionar linha (substituto do df.append)
+df.loc[len(df)] = ['Alice', 'Smith', 'alice@email.com']
+
+# ⚠️ EVITAR DUPLICAÇÃO AO EXECUTAR MÚLTIPLAS VEZES:
+# 1. Resetar DataFrame antes de adicionar
+people = {
+    "first": ["Corey", "Jane", "John"],
+    "last": ["Schafer", "Doe", "Doe"],
+    "email": ["CoreySchafer@gmail.com", "JaneDoe@email.com", "JohnDoe@email.com"]
+}
+df = pd.DataFrame(people)  # Reset completo
+
+# 2. Verificar se já existe antes de adicionar
+if 'Alice' not in df['first'].values:
+    df.loc[len(df)] = ['Alice', 'Smith', 'alice@email.com']
+
+# 3. Usar drop_duplicates() se necessário
+df = df.drop_duplicates()
+
+# 🔄 FORMAS DE JUNTAR DATAFRAMES:
+# 1. concat() - Juntar verticalmente (um abaixo do outro)
+df1 = pd.DataFrame({'first': ['Corey', 'Jane'], 'last': ['Schafer', 'Doe']})
+df2 = pd.DataFrame({'first': ['John', 'Alice'], 'last': ['Doe', 'Smith']})
+df_junto = pd.concat([df1, df2], ignore_index=True)
+
+# 2. concat() com chaves (identifica origem)
+df_junto = pd.concat([df1, df2], keys=['grupo1', 'grupo2'])
+
+# 3. merge() - Juntar como SQL (baseado em coluna)
+df3 = pd.DataFrame({'first': ['Corey', 'Jane'], 'idade': [25, 30]})
+df4 = pd.DataFrame({'first': ['Jane', 'John'], 'salario': [5000, 6000]})
+df_merge = pd.merge(df3, df4, on='first', how='outer')  # outer, inner, left, right
+
+# 4. join() - Juntar por índice
+df3 = pd.DataFrame({'idade': [25, 30]}, index=['Corey', 'Jane'])
+df4 = pd.DataFrame({'salario': [5000, 6000]}, index=['Jane', 'John'])
+df_join = df3.join(df4, how='outer')
+```
+
+#### **⚠️ Nota Importante: append() removido**
+```python
+# df.append() foi removido no pandas 2.0.0
+# Antigo: df.append(nova_linha)
+# Novo: pd.concat([df, nova_linha]) ou df.loc[len(df)] = [...]
+```
 # Memory usage
 df.memory_usage()
 df.info(memory_usage='deep')
