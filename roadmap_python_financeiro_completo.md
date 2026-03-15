@@ -437,7 +437,7 @@ c:\Projects Python\
   - [ ] Retorno simples: `(preco_atual / preco_anterior) - 1`
   - [ ] Retorno logarítmico: `np.log(preco_atual / preco_anterior)`
 
-### 📊 Semana 9-10: Estatística e Probabilidade
+### 📊 Semana 9-10: Estatística e Probabilidade + SQL Essencial
 
 **✅ Passo a passo (faça nesta ordem):**
 1. **Vídeo (estatística com intuição):**
@@ -445,8 +445,75 @@ c:\Projects Python\
 2. **Prática (checklist):**
    - Comparar risco/retorno de `BTC`, `ETH`, `SPY`, `GLD`
    - Montar uma tabela com `return`, `vol`, `sharpe`, `max_drawdown`
+   - Criar banco SQL com dados históricos
 3. **Entrega (fim da semana 10):**
-   - 1 notebook com métricas e um ranking simples por score (ex: Sharpe)
+   - 1 notebook com métricas, ranking e consultas SQL
+
+---
+
+#### **🗄️ SQL Essencial para Finanças**
+
+**🎯 Por que SQL é CRUCIAL para análise financeira:**
+- **Dados históricos:** Bancos armazenam anos de transações em SQL
+- **Performance:** Milhões de registros consultados em segundos
+- **Integração:** Python + SQL = padrão da indústria
+- **Empregabilidade:** 90% das vagas de dados exigem SQL
+- **Backtesting:** Estratégias testadas em bases SQL robustas
+
+1. **SQLite (início) - Portátil e local**
+   - 📺 **Vídeos Tutoriais:**
+     - **Corey Schafer:** [SQLite Tutorial](https://www.youtube.com/watch?v=k8E7oW5h72A) - Básico completo
+     - **Programming with Mosh:** [SQL para Python](https://www.youtube.com/watch?v=FR4aIi1t5gc) - Integração Python
+     - **FreeCodeCamp:** [SQLite + Pandas](https://www.youtube.com/watch?v=7fN2c8hQJd8) - Caso prático
+   - 📚 **Bibliotecas necessárias:**
+     ```python
+     import sqlite3
+     import pandas as pd
+     ```
+   - 💡 **Código base:**
+     ```python
+     # Criar conexão
+     conn = sqlite3.connect('finance.db')
+
+     # Salvar DataFrame no SQL
+     df.to_sql('btc_prices', conn, if_exists='replace')
+
+     # Consultar SQL com pandas
+     query = "SELECT * FROM btc_prices WHERE volume > 1000000"
+     result = pd.read_sql(query, conn)
+     ```
+
+2. **PostgreSQL (produção) - Empresarial**
+   - 📺 **Vídeos Tutoriais:**
+     - **PostgreSQL:** [Official Tutorial](https://www.youtube.com/watch?v=qw--VYLpxG4) - Instalação e básico
+     - **Alex The Analyst:** [SQL Financeiro](https://www.youtube.com/watch?v=7b5J_p8q0sI) - Consultas financeiras
+     - **CodeWithMorris:** [Python + PostgreSQL](https://www.youtube.com/watch?v=OUsCpFz8I6E) - Integração completa
+   - 📚 **Bibliotecas necessárias:**
+     ```python
+     pip install psycopg2-binary sqlalchemy
+     import psycopg2
+     import sqlalchemy
+     ```
+   - 💡 **Código base:**
+     ```python
+     # Conectar PostgreSQL
+     engine = sqlalchemy.create_engine('postgresql://user:password@localhost/finance_db')
+
+     # Operações complexas
+     df.to_sql('large_dataset', engine, chunksize=10000)
+     result = pd.read_sql('SELECT * FROM trades WHERE date >= ?', engine, params=['2024-01-01'])
+     ```
+
+**🏦 Casos de Uso Financeiros com SQL:**
+- **Portfólio Management:** Consultas complexas de posições
+- **Risk Analysis:** Joins entre múltiplas tabelas
+- **Compliance:** Auditorias e relatórios regulatórios
+- **Performance Attribution:** Análise de retornos por setor
+- **Backtesting:** Estratégias com dados históricos robustos
+
+---
+
+#### **📈 Estatística Financeira Avançada**
 
 - [ ] **Medidas de Risco**
   - [ ] Volatilidade: `np.std(returns) * np.sqrt(252)`
@@ -1764,6 +1831,139 @@ c:\Projects Python\
    - Docs: https://docs.streamlit.io/
    - Vídeos: https://www.youtube.com/@streamlit
 4. **Entrega da fase:** sistema rodando localmente com README + `.env.example`
+
+### 🚀 Semana 31-32: APIs e Streaming em Tempo Real
+
+**✅ Passo a passo (faça nesta ordem):**
+1. **Vídeo/Docs (API + streaming):**
+   - FastAPI docs: https://fastapi.tiangolo.com/
+   - **Async Python:** [Corey Schafer](https://www.youtube.com/watch?v=9yCSQ7yMA74) - Async/Await completo
+   - **Real-time Data:** [ArjanCodes](https://www.youtube.com/watch?v=7Lq6s9gZK_I) - Streaming financeiro
+2. **Prática (checklist):**
+   - Criar API REST básica com FastAPI
+   - Implementar WebSocket para streaming de preços
+   - Conectar com exchanges (Binance/Alpha Vantage)
+3. **Entrega (fim da semana 32):**
+   - API rodando + endpoint streaming de preços BTC/SPY
+
+---
+
+#### **⚡ Async Python Essencial**
+
+**🎯 Por que Async é CRUCIAL para finanças:**
+- **Streaming:** Múltiplas fontes de dados simultâneas
+- **Performance:** Milhares de requisições concorrentes
+- **Tempo Real:** Preços, notícias, indicadores ao vivo
+- **Escalabilidade:** Sistema eficiente sem bloqueios
+
+1. **Async/Await Fundamentos**
+   - 📺 **Vídeos Tutoriais:**
+     - **Corey Schafer:** [Async Python](https://www.youtube.com/watch?v=9yCSQ7yMA74) - Conceitos completos
+     - **ArjanCodes:** [Async Patterns](https://www.youtube.com/watch?v=7Lq6s9gZK_I) - Padrões avançados
+     - **FastAPI:** [Async Endpoints](https://www.youtube.com/watch?v=0QI3x3M4p8M) - APIs assíncronas
+   - 📚 **Bibliotecas necessárias:**
+     ```python
+     import asyncio
+     import aiohttp  # pip install aiohttp
+     import websockets  # pip install websockets
+     from fastapi import FastAPI, WebSocket
+     ```
+   - 💡 **Código base:**
+     ```python
+     import asyncio
+     import aiohttp
+
+     async def fetch_price(symbol):
+         async with aiohttp.ClientSession() as session:
+             url = f"https://api.binance.com/api/v3/ticker/price?symbol={symbol}"
+             async with session.get(url) as response:
+                 return await response.json()
+
+     async def fetch_multiple_prices():
+         symbols = ['BTCUSDT', 'ETHUSDT', 'SPY']
+         tasks = [fetch_price(symbol) for symbol in symbols]
+         prices = await asyncio.gather(*tasks)
+         return prices
+
+     # Executar
+     prices = asyncio.run(fetch_multiple_prices())
+     ```
+
+2. **Streaming com WebSockets**
+   - 📺 **Vídeos Tutoriais:**
+     - **FastAPI:** [WebSocket Tutorial](https://www.youtube.com/watch?v=0QI3x3M4p8M) - Streaming real-time
+     - **Real Python:** [Async Web Scraping](https://www.youtube.com/watch?v=5XqA9m8BQ_Y) - Dados em tempo real
+     - **Coding Entrepeneur:** [Trading Bot Async](https://www.youtube.com/watch?v=8F7k2k2q5Jk) - Bot com async
+   - 💡 **Código base:**
+     ```python
+     from fastapi import FastAPI, WebSocket
+     import asyncio
+     import json
+
+     app = FastAPI()
+
+     @app.websocket("/ws/prices")
+     async def websocket_endpoint(websocket: WebSocket):
+         await websocket.accept()
+
+         while True:
+             # Buscar preços em tempo real
+             prices = await fetch_multiple_prices()
+
+             # Enviar para cliente
+             await websocket.send_text(json.dumps(prices))
+
+             # Esperar 1 segundo
+             await asyncio.sleep(1)
+
+     async def stream_binance():
+         async with websockets.connect('wss://stream.binance.com:9443/ws/btcusdt@ticker') as ws:
+             while True:
+                 data = await ws.recv()
+                 yield json.loads(data)
+     ```
+
+3. **API Assíncrona com FastAPI**
+   - 📺 **Vídeos Tutoriais:**
+     - **FastAPI:** [Official Tutorial](https://www.youtube.com/watch?v=S7vNi2nFbpM) - Completo
+     - **TestDriven.io:** [Async CRUD](https://www.youtube.com/watch?v=0QI3x3M4p8M) - Operações assíncronas
+     - **ArjanCodes:** [Clean Architecture](https://www.youtube.com/watch?v=7Lq6s9gZK_I) - Estrutura limpa
+   - 💡 **Código base:**
+     ```python
+     from fastapi import FastAPI, HTTPException
+     from pydantic import BaseModel
+
+     app = FastAPI()
+
+     class Price(BaseModel):
+         symbol: str
+         price: float
+         timestamp: datetime
+
+     @app.get("/api/price/{symbol}")
+     async def get_price(symbol: str):
+         try:
+             price_data = await fetch_price(symbol)
+             return Price(**price_data)
+         except Exception as e:
+             raise HTTPException(status_code=404, detail=f"Error fetching {symbol}: {str(e)}")
+
+     @app.get("/api/prices")
+     async def get_all_prices():
+         prices = await fetch_multiple_prices()
+         return {"prices": prices, "timestamp": datetime.now()}
+     ```
+
+**📈 Aplicações Financeiras com Async:**
+- **Real-time Trading:** Preços live, ordens instantâneas
+- **Portfolio Monitoring:** Atualizações simultâneas de múltiplos ativos
+- **Risk Management:** Cálculos em tempo real de exposição
+- **News Sentiment:** Processamento de notícias enquanto preços atualizam
+- **Arbitrage:** Monitoramento de múltiplas exchanges simultaneamente
+
+> **⚡ Poder Adquirido:** Sistemas de alta performance para trading em tempo real!
+
+---
 
 ### 🏛️ Semana 33-34: Arquitetura do Sistema
 
