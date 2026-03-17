@@ -125,6 +125,8 @@ Use esta sequência como "linha única" do que fazer a cada etapa. A regra é:
 
 ### ✅ Semana 1-2: Python Básico Avançado - **CONCLUÍDO** 🎉
 
+**📅 Período:** 02/02/2026 - 15/02/2026
+
 > **🌟 Evolução Completa!** Você transformou conhecimento em habilidade prática. Agora você tem a base para construir qualquer sistema financeiro!
 > **🚀 Nível Alcançado:** Python Intermediário - Pronto para desafios reais!
 > **🏅 Recompensa Desbloqueada:** **BADGE DE FUNDAMENTOS PYTHON** 🎖️
@@ -199,6 +201,8 @@ c:\Projects Python\
 
 ### 🔄 Semana 3-4: Git + GitHub Essencial
 
+**📅 Período:** 16/02/2026 - 01/03/2026
+
 **✅ Passo a passo (faça nesta ordem):**
 1. **Vídeos diretos (básico obrigatório):**
    - **Git + GitHub (Curso em Vídeo):** https://www.youtube.com/watch?v=4P6aT6J3x2M
@@ -217,6 +221,8 @@ c:\Projects Python\
 - Faça o checklist completo na seção **"🚀 Criando seu Portfólio e GitHub"** (mais abaixo no arquivo).
 
 ### 📊 Semana 5-6: Python para Dados - **A FAZER**
+
+**📅 Período:** 02/03/2026 - **Em andamento**
 
 **Objetivo:** Dominar Pandas para análise financeira (BTC, ETH, SPY)
 
