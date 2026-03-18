@@ -227,8 +227,11 @@ c:\Projects Python\
 **Objetivo:** Dominar Pandas para análise financeira (BTC, ETH, SPY)
 
 **✅ Passo a passo (faça nesta ordem):**
+Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Intermediário: Corey Schafer + Data School Avançado: Cursos especializados em Coursera com certificação
+
 1. **Vídeo (Pandas):**
    - Corey Schafer (Pandas): https://www.youtube.com/@coreyms
+   - Hashtag Programação (Pandas): https://www.youtube.com/watch?v=C0aj3FjN5e0
 2. **Prática (guiada):**
    - Kaggle Learn (Pandas): https://www.kaggle.com/learn/pandas
 3. **Entrega (fim da semana 6):**
