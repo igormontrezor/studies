@@ -18,6 +18,6 @@ elif km <= 200:
     final = (total - (total*(desc/100)));
 else:
     final = (preco * dias);
-    
+
 print (f'Valor total a pagar {final}, por {dias} dias e {km} kms.');
 print (emoji.emojize(f'Desconto: {total} - {desc}% ::money-mouth_face::'));
