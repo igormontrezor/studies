@@ -7,10 +7,15 @@
 # 📋 SUMÁRIO DAS FASES
 
 ### 1️⃣ [🎯 Fase 1: Fundamentos Python Essenciais](#-fase-1-fundamentos-python-essenciais-10-12-semanas---17-completo) (10-12 semanas)
+
 ### 2️⃣ [📊 Fase 2: Análise Financeira Aplicada](#-fase-2-análise-financeira-aplicada-12-16-semanas---0-completo) (12-16 semanas)
+
 ### 3️⃣ [🪙 Fase 3: Criptomoedas e APIs](#-fase-3-criptomoedas-e-apis-16-20-semanas---0-completo) (16-20 semanas)
+
 ### 4️⃣ [🤖 Fase 4: Automação e Machine Learning](#-fase-4-automação-e-machine-learning-20-24-semanas---0-completo) (20-24 semanas)
+
 ### 5️⃣ [🏗️ Fase 5: Sistema Integrado](#️-fase-5-sistema-integrado-16-20-semanas---0-completo) (16-20 semanas)
+
 ### 6️⃣ [🎯 Fase 6: Deploy e Produção](#-fase-6-deploy-e-produção-20-24-semanas---0-completo) (20-24 semanas)
 
 ---
@@ -28,11 +33,13 @@
 ---
 
 ## 📋 Visão Geral
+
 Este roadmap foi projetado para dominar Python e criar sistemas financeiros completos, incluindo criptomoedas, automação de estratégias e integração múltipla de fontes de dados.
 
 ## 🎖️ Sistema de Recompensas e Níveis
 
 ### 📊 Escala de Habilidades:
+
 - **🥉 Bronze (0-2,000 XP):** Iniciante - Fundamentos Python
 - **🥈 Prata (2,001-5,000 XP):** Intermediário - Análise de dados e finanças
 - **🥇 Ouro (5,001-8,000 XP):** Avançado - Cripto e APIs
@@ -41,6 +48,7 @@ Este roadmap foi projetado para dominar Python e criar sistemas financeiros comp
 - **👑 Lendário (20,001+ XP):** Mestre Quant - Estratégias avançadas
 
 ### 🏆 Badges Especiais:
+
 - **🎖️ Badge de Fundamentos Python:** +500 XP (Concluído!)
 - **🎖️ Badge de Manipulação de Dados:** +300 XP
 - **🎖️ Badge de Análise Financeira:** +400 XP
@@ -50,6 +58,7 @@ Este roadmap foi projetado para dominar Python e criar sistemas financeiros comp
 - **🎖️ Badge de Estratégias:** +1,200 XP
 
 ### ⭐ Seu Status Atual:
+
 - **Nível:** Python Intermediário 🥉
 - **XP Acumulado:** 500/20,000 XP
 - **Badge Atual:** Badge de Fundamentos Python ✅
@@ -67,11 +76,13 @@ Este roadmap foi projetado para dominar Python e criar sistemas financeiros comp
 ## 🧭 Sequência recomendada (modo vídeo) — siga nesta ordem
 
 Use esta sequência como "linha única" do que fazer a cada etapa. A regra é:
+
 - **1) Vídeo (entender)**
 - **2) Prática guiada (copiar e adaptar)**
 - **3) Projeto pequeno (fixar)**
 
 ### 1) Fase 1 — Fundamentos Python (Semanas 1-6)
+
 - **Semana 1-2:** conclua Python básico/controle/funções
   - Vídeo principal: **Curso em Vídeo (Gustavo Guanabara) — módulos 1 a 3**
   - Prática: Exercism (Python) + 10-20 exercícios
@@ -83,10 +94,12 @@ Use esta sequência como "linha única" do que fazer a cada etapa. A regra é:
   - Complemento (arquitetura): **ArjanCodes**
 
 ### 2) Checkpoint obrigatório (antes do 1º projeto público)
+
 - **Antes de usar (obrigatório):** aprenda o **básico de Git/GitHub** no **início da Fase 2** (antes da Semana 7-8).
 - **Antes do projeto grande (web):** faça o **checkpoint avançado** no **início da Fase 5**.
 
 ### 3) Fase 2 — Finanças + Dados (Semanas 7-14)
+
 - **Semana 7-8:** indicadores e retornos (use SPY, QQQ, BTC, ETH, commodities)
   - Vídeo: escolha 1 playlist e siga até o fim (evite pular)
 - **Semana 9-10:** estatística/riscos (vol, VaR, Sharpe)
@@ -95,17 +108,21 @@ Use esta sequência como "linha única" do que fazer a cada etapa. A regra é:
 - **Semana 13-14:** backtesting básico (primeiro SMA/RSI, depois melhorias)
 
 ### 4) Fase 3 — Cripto + APIs (Semanas 15-22)
+
 - **Semana 15-16:** APIs + OHLCV (CCXT / Binance)
 - **Semana 17-18:** múltiplas exchanges + alertas
 - **Inicie aqui o projeto:** **Crypto Gems Scanner (buscar gemas)**
 
 ### 5) Fase 4 — Automação + ML (Semanas 41-60)
+
 - Scraping (com ética) + ML clássico
 
 ### 6) Fase 5 — Sistema integrado (Semanas 61-76)
+
 - Junte: coleta → storage → backtest → alertas → dashboard
 
 ### 7) Fase 6 — Especialista (Semanas 77-96)
+
 - Otimização, robustez, monitoramento, deploy e documentação
 
 ---
@@ -133,6 +150,7 @@ Use esta sequência como "linha única" do que fazer a cada etapa. A regra é:
 > **⭐ XP Ganhos:** +500 XP | **Total Acumulado:** 500/10,000 XP
 
 **✅ Passo a passo (feito):**
+
 1. **Vídeo (base):**
    - [x] Curso em Vídeo (Gustavo Guanabara) — módulos 1 a 3
 2. **Prática (checklist):**
@@ -148,6 +166,7 @@ Use esta sequência como "linha única" do que fazer a cada etapa. A regra é:
 > **⭐ XP Ganhos:** +200 XP | **Total Acumulado:** 700/10,000 XP
 
 **✅ Comandos executados (feito):**
+
 ```bash
 # 1. Criar ambiente virtual
 python -m venv "c:\Projects Python\envs\data_scientist_1"
@@ -167,6 +186,7 @@ python -m ipykernel install --user --name=data_scientist_1 --display-name="Pytho
 ```
 
 **📁 Estrutura criada:**
+
 ```
 c:\Projects Python\
 ├── envs\data_scientist_1\          # ← Ambiente virtual
@@ -175,6 +195,7 @@ c:\Projects Python\
 ```
 
 **✅ Verificação (feito):**
+
 - [x] Pandas 3.0.1 instalado e funcionando
 - [x] Jupyter Notebook rodando em localhost:8888
 - [x] Kernel `data_scientist_1` disponível
@@ -183,15 +204,15 @@ c:\Projects Python\
 - [x] **Variáveis e Tipos de Dados**
   - [x] `int`, `float`, `str`, `bool`, `list`, `dict`, `tuple`, `set`
   - [x] Type hints: `int`, `float`, `List[str]`, `Dict[str, float]`
-  > ** Poder Adquirido:** Seu código agora é profissional e robusto!
+    > ** Poder Adquirido:** Seu código agora é profissional e robusto!
 - [x] **Estruturas de Controle**
   - [x] `if/elif/else`, `for/while`, `break/continue`
   - [x] List comprehensions: `[x*2 for x in range(10)]`
-  > **⚡ Habilidade Desbloqueada:** Otimização e elegância no código!
+    > **⚡ Habilidade Desbloqueada:** Otimização e elegância no código!
 - [x] **Funções e Módulos**
   - [x] `def`, `lambda`, `*args`, `**kwargs`
   - [x] Import: `import pandas as pd`, `from datetime import datetime`
-  > **🎯 Competência Desenvolvida:** Arquitetura de código modular!
+    > **🎯 Competência Desenvolvida:** Arquitetura de código modular!
 
 **Curso concluído:** Automate the Boring Stuff with Python Programming
 
@@ -204,6 +225,7 @@ c:\Projects Python\
 **📅 Período:** 16/02/2026 - 01/03/2026
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos diretos (básico obrigatório):**
    - **Git + GitHub (Curso em Vídeo):** https://www.youtube.com/watch?v=4P6aT6J3x2M
    - **GitHub para iniciantes (Curso em Vídeo):** https://www.youtube.com/watch?v=3YM3f2y9x2k
@@ -218,6 +240,7 @@ c:\Projects Python\
    - Repositório GitHub funcionando com seu notebook
 
 **🎯 Objetivo:** você conseguir **versionar** seus notebooks/scripts e **fazer push** sem travar.
+
 - Faça o checklist completo na seção **"🚀 Criando seu Portfólio e GitHub"** (mais abaixo no arquivo).
 
 ### 📊 Semana 5-6: Python para Dados - **A FAZER**
@@ -240,27 +263,31 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 - [ ] **Manipulação de Dados**
   - [x] `pandas`: `pd.read_csv()`, `df.head()`, `df.describe()`
   - [ ] `numpy`: `np.array()`, `np.mean()`, `np.std()`
-  > ** Poder Adquirido:** Dados financeiros agora obedecem você!
-- [ ] **Trabalho com Tempo**
-  - [ ] `datetime`: `datetime.now()`, `timedelta(days=1)`
-  - [ ] `pandas`: `pd.to_datetime()`, `df.resample('1H')`
-  > **⏰ Habilidade Desbloqueada:** Domínio temporal!
+    > ** Poder Adquirido:** Dados financeiros agora obedecem você!
+- [x] **Trabalho com Tempo**
+  - [x] `datetime`: `datetime.now()`, `timedelta(days=1)`
+  - [x] `pandas`: `pd.to_datetime()`, `df.resample('1H')`
+    > **⏰ Habilidade Desbloqueada:** Domínio temporal!
 - [ ] **Limpeza e Transformação**
   - [ ] `df.dropna()`, `df.fillna()`, `df.groupby()`
   - [ ] `df.merge()`, `df.pivot_table()`, `df.melt()`
-  > **🧹 Poder Adquirido:** Dados impecáveis!
-- [ ] **Análise Exploratória**
-  - [ ] `df.info()`, `df.describe()`, `df.corr()`
-  > **🔍 Habilidade Desbloqueada:** Visão analítica!
-- [ ] **Visualizações**
-  - [ ] `df.plot()`, `df.hist()`, `df.boxplot()`
-  > **📊 Poder Adquirido:** Gráficos que contam histórias!
-- [ ] **Exercícios Práticos**
-  - [ ] **Criar DataFrame com OHLCV de BTC/ETH (cripto) e/ou SPY (S&P500)**
+    > **🧹 Poder Adquirido:** Dados impecáveis!
+- [x] **Análise Exploratória**
+  - [x] `df.info()`, `df.describe()`, `df.corr()`
+    > **🔍 Habilidade Desbloqueada:** Visão analítica!
+- [x] **Visualizações**
+  - [x] `df.plot()`, `df.hist()`, `df.boxplot()`
+    > **📊 Poder Adquirido:** Gráficos que contam histórias!
+- [x] **Exercícios Práticos**
+  - [x] **Criar DataFrame com OHLCV de BTC/ETH (cripto) e/ou SPY (S&P500)**
     - 📺 **Vídeos Tutoriais:**
-      - **Python Finance:** [DataReader yfinance](https://www.youtube.com/watch?v=KjM1Uy_Xl-k) - Como baixar dados financeiros
-      - **CodeWithMorris:** [Pandas Finance](https://www.youtube.com/watch?v=OUsCpFz8I6E) - Manipulação de dados OHLCV
-      - **Socratica:** [Análise Técnica Python](https://www.youtube.com/watch?v=4-2p2q2G5o) - Indicadores técnicos
+      - **Python Finance:** [yfinance API Tutorial](https://www.youtube.com/watch?v=hlwz4Scn0yY) - Como baixar dados financeiros em tempo real
+      - **Alternativas Mais Didáticas:**
+        - **YFinance API Full Tutorial:** [YFinance API Full PythonTutorial](https://www.youtube.com/watch?v=j0sBKAB75oc) - Tutorial completo e explicativo
+        - **Ryan O'Connell:** [Intro to Python for Finance](https://www.youtube.com/watch?v=uOqPElBsBmM) - Guia para iniciantes em finanças
+        - **yfinance Update 2025:** [What You NEED to Know!](https://www.youtube.com/watch?app=desktop&v=037_883wHGo) - Atualizações recentes da biblioteca
+      - **freeCodeCamp:** [Pandas for Financial Analysis - Complete Guide](https://www.youtube.com/watch?v=OSxICt1aX9c) - Manipulação avançada de dados OHLCV e análise financeira completa
+      - **Python for Finance:** [Complete Playlist](https://www.youtube.com/playlist?list=PL9ATnizYJ7f9pCPBzr-isv0_R3E6OW6YY) - Análise técnica e indicadores
     - 📚 **Bibliotecas necessárias:**
       ```python
       import pandas as pd
@@ -268,6 +295,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
       import plotly.graph_objects as go  # pip install plotly
       ```
     - 💡 **Código base:**
+
       ```python
       # Baixar dados
       tickers = ['BTC-USD', 'ETH-USD', 'SPY']
@@ -279,10 +307,12 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 
   - [ ] **Calcular retornos (simples/log) e volatilidade (rolling)**
     - 📺 **Vídeos Tutoriais:**
-      - **QuantCourse:** [Retornos Financeiros](https://www.youtube.com/watch?v=7b5J_p8q0sI) - Cálculo de retornos
-      - **DataCamp:** [Volatilidade Rolling](https://www.youtube.com/watch?v=2p2k4aJ5X4k) - Volatilidade com janela móvel
-      - **Python para Finanças:** [Log vs Simple Returns](https://www.youtube.com/watch?v=R-s2b_w2L-w) - Diferenças e aplicações
+      - **Python for Finance:** [Historical Volatility & Risk-Return Ratios](https://www.youtube.com/watch?v=j4c2XqiJzRU) - Volatilidade histórica e retornos
+      - **AlphaBench:** [Portfolio Volatility with Python](https://www.youtube.com/watch?v=GKMSG_3MVGM) - Cálculo de volatilidade de portfólio
+      - **DataCamp Tutorial:** [Python for Finance Algorithmic Trading](https://www.datacamp.com/tutorial/finance-python-trading) - Retornos e volatilidade
+      - **Medium Tutorial:** [Calculating Volatility and Returns](https://medium.com/@palajnc/calculating-the-volatility-and-return-of-stocks-with-python-cb6d90314e5a) - Guia completo com código
     - 💡 **Código base:**
+
       ```python
       # Retorno simples
       df['retorno_simples'] = df['Close'].pct_change()
@@ -296,37 +326,40 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 
   - [ ] **Plotar candlesticks + SMA/EMA (Plotly)**
     - 📺 **Vídeos Tutoriais:**
-      - **Plotly:** [Candlestick Charts](https://www.youtube.com/watch?v=06kFqJ8_4vM) - Gráficos de velas
-      - **Coding Entrepeneur:** [SMA/EMA Python](https://www.youtube.com/watch?v=8F7k2k2q5Jk) - Médias móveis
-      - **Algovibes:** [Technical Indicators](https://www.youtube.com/watch?v=J5i2X5Z5J3E) - Indicadores completos
+      - **Plotly With (DASH):** [Plotly Finance Tutorial](https://www.youtube.com/watch?v=Qx5eFVUdDxk&list=PLYD54mj9I2JevdabetHsJ3RLCeMyBNKYV) - Gráficos financeiros interativos
+      - **Corey Schafer:** [Pandas & Plotly](https://www.youtube.com/watch?v=9GYmFXBitBw&list=PLBSCvBlTOLa8rf2kGkP_Bx5xXqT-er4Yq) - Visualização de dados financeiros
+      - **Data Science Garage:** [Financial Plotting](https://www.youtube.com/watch?v=vT0-eLOw5Uk) - Indicadores técnicos com Python
     - 💡 **Código base:**
-      ```python
-      # SMA (Simple Moving Average)
+
+      ````python # SMA (Simple Moving Average)
       df['SMA_20'] = df['Close'].rolling(window=20).mean()
       df['SMA_50'] = df['Close'].rolling(window=50).mean()
 
-      # EMA (Exponential Moving Average)
-      df['EMA_20'] = df['Close'].ewm(span=20).mean()
-      df['EMA_50'] = df['Close'].ewm(span=50).mean()
+          # EMA (Exponential Moving Average)
+          df['EMA_20'] = df['Close'].ewm(span=20).mean()
+          df['EMA_50'] = df['Close'].ewm(span=50).mean()
 
-      # Candlestick com Plotly
-      fig = go.Figure(data=go.Candlestick(
-          x=df.index,
-          open=df['Open'],
-          high=df['High'],
-          low=df['Low'],
-          close=df['Close']
-      ))
+          # Candlestick com Plotly
+          fig = go.Figure(data=go.Candlestick(
+              x=df.index,
+              open=df['Open'],
+              high=df['High'],
+              low=df['Low'],
+              close=df['Close']
+          ))
 
-      # Adicionar médias móveis
-      fig.add_trace(go.Scatter(x=df.index, y=df['SMA_20'], name='SMA 20'))
-      fig.add_trace(go.Scatter(x=df.index, y=df['EMA_20'], name='EMA 20'))
-      ```
-  > **🎯 Competência a Dominar:** Análise técnica completa!
+          # Adicionar médias móveis
+          fig.add_trace(go.Scatter(x=df.index, y=df['SMA_20'], name='SMA 20'))
+          fig.add_trace(go.Scatter(x=df.index, y=df['EMA_20'], name='EMA 20'))
+          ```
+
+      > **🎯 Competência a Dominar:** Análise técnica completa!
+      ````
 
 ### Semana 5-6: Estruturas de Dados Financeiras (OOP essencial)
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo (OOP):**
    - Corey Schafer (OOP): https://www.youtube.com/@coreyms
 2. **Prática (checklist):**
@@ -336,6 +369,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Um mini "portfolio tracker" com dados de `BTC/USDT` e `SPY`
 
 - [ ] **Classes e Objetos**
+
   ```python
   class Ativo:
       def __init__(self, symbol, preco):
@@ -354,6 +388,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
       def preco_formatado(self):
           return f"${self.preco:,.2f}"
   ```
+
 - [ ] **Herança e Polimorfismo**
 - [ ] **Decoradores**: `@property`, `@staticmethod`
 - [ ] **Exercícios Práticos**
@@ -367,6 +402,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 📚 Biblioteca da Fase 1 (opcional)
 
 **📚 Recursos Adicionais (onde estudar / referência rápida):**
+
 - **Documentação (oficial):**
   - Python Tutorial (oficial): https://docs.python.org/3/tutorial/
   - Built-in types (listas/dicts/sets/tuples): https://docs.python.org/3/library/stdtypes.html
@@ -376,6 +412,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   - Corey Schafer (Python): https://www.youtube.com/@coreyms
 
 **📚 Recursos de Estudo - Dados:**
+
 - **Documentação (oficial):**
   - Pandas User Guide: https://pandas.pydata.org/docs/user_guide/
 - **Prática guiada (rápida e objetiva):**
@@ -386,6 +423,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   - Yahoo Finance (histórico): https://finance.yahoo.com/
 
 **📚 Recursos de Estudo - Financeiros:**
+
 - **Documentação (oficial):**
   - Python Classes: https://docs.python.org/3/tutorial/classes.html
 - **Referência rápida (boas práticas):**
@@ -415,13 +453,15 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 > **� XP Necessário:** 2,000 XP para completar esta fase
 
 **�� Cursos Recomendados (Intermediário):**
+
 - [ ] **Sentdex (Python + finanças / dados na prática)**
 
-**📅 Progresso da Fase 2:** 0/12 semanas completas | ___ horas estudadas
+**📅 Progresso da Fase 2:** 0/12 semanas completas | \_\_\_ horas estudadas
 
-###  Semana 7-8: Análise Financeira Básica
+### Semana 7-8: Análise Financeira Básica
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo (explicação + implementação):**
    - Sentdex (pandas + finanças/visualização): https://www.youtube.com/@sentdex
 2. **Prática (checklist):**
@@ -431,6 +471,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - 1 notebook com funções `sma`, `ema`, `rsi` + gráficos + interpretação básica
 
 - [ ] **Indicadores Técnicos**
+
   ```python
   def sma(data, period=20):
       return data.rolling(window=period).mean()
@@ -442,6 +483,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
       rs = gain / loss
       return 100 - (100 / (1 + rs))
   ```
+
 - [ ] **Análise de Retorno**
   - [ ] Retorno simples: `(preco_atual / preco_anterior) - 1`
   - [ ] Retorno logarítmico: `np.log(preco_atual / preco_anterior)`
@@ -449,6 +491,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 📊 Semana 9-10: Estatística e Probabilidade + SQL Essencial
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo (estatística com intuição):**
    - StatQuest: https://www.youtube.com/@statquest
 2. **Prática (checklist):**
@@ -463,6 +506,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 #### **🗄️ SQL Essencial para Finanças**
 
 **🎯 Por que SQL é CRUCIAL para análise financeira:**
+
 - **Dados históricos:** Bancos armazenam anos de transações em SQL
 - **Performance:** Milhões de registros consultados em segundos
 - **Integração:** Python + SQL = padrão da indústria
@@ -480,6 +524,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
      import pandas as pd
      ```
    - 💡 **Código base:**
+
      ```python
      # Criar conexão
      conn = sqlite3.connect('finance.db')
@@ -504,6 +549,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
      import sqlalchemy
      ```
    - 💡 **Código base:**
+
      ```python
      # Conectar PostgreSQL
      engine = sqlalchemy.create_engine('postgresql://user:password@localhost/finance_db')
@@ -514,6 +560,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
      ```
 
 **🏦 Casos de Uso Financeiros com SQL:**
+
 - **Portfólio Management:** Consultas complexas de posições
 - **Risk Analysis:** Joins entre múltiplas tabelas
 - **Compliance:** Auditorias e relatórios regulatórios
@@ -537,6 +584,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 📊 Semana 11-12: Visualização Financeira
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo (plotly/candles):**
    - Plotly (canal/short tutorials): https://www.youtube.com/@plotly
 2. **Prática (checklist):**
@@ -545,6 +593,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - 1 dashboard simples (Streamlit ou notebook) com candles + indicadores
 
 - [ ] **Matplotlib/Seaborn**
+
   ```python
   import matplotlib.pyplot as plt
   import seaborn as sns
@@ -554,7 +603,9 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   plt.title('Preço do Ativo')
   plt.show()
   ```
+
 - [ ] **Gráficos Candlestick**
+
   ```python
   import plotly.graph_objects as go
 
@@ -571,6 +622,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🧮 Semana 13-14: Backtesting Básico
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo (backtest prático):**
    - Part Time Larry (data + automação): https://www.youtube.com/@parttimelarry
 2. **Prática (checklist):**
@@ -580,6 +632,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - 1 relatório com equity curve + drawdown + trades + parâmetros
 
 - [ ] **Estratégia Simples**
+
   ```python
   def estrategia_sma(data, short=20, long=50):
       data['sma_short'] = sma(data['close'], short)
@@ -607,14 +660,16 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 > **📊 XP Necessário:** 3,000 XP para completar esta fase
 
 **📚 Cursos Recomendados (Intermediário-Avançado):**
+
 - [ ] **CCXT (Documentação + exemplos oficiais)**
 - [ ] **Binance API (docs + exemplos)**
 
-**📅 Progresso da Fase 3:** 0/20 semanas completas | ___ horas estudadas
+**📅 Progresso da Fase 3:** 0/20 semanas completas | \_\_\_ horas estudadas
 
 ### 🌐 Semana 15-16: APIs de Criptomoedas
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo/Exemplos (APIs/CCXT na prática):**
    - CCXT (repo + exemplos): https://github.com/ccxt/ccxt
 2. **Prática (checklist):**
@@ -624,6 +679,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Um script `download_ohlcv.py` + dataset local + notebook validando dados
 
 - [ ] **Binance API**
+
   ```python
   import ccxt
 
@@ -631,12 +687,14 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   ticker = binance.fetch_ticker('BTC/USDT')
   print(f"BTC Price: ${ticker['last']}")
   ```
+
 - [ ] **Dados Históricos**
   ```python
   ohlcv = binance.fetch_ohlcv('BTC/USDT', '1h', limit=1000)
   df = pd.DataFrame(ohlcv, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
   ```
 - [ ] **Múltiplas Exchanges**
+
   ```python
   exchanges = {
       'binance': ccxt.binance(),
@@ -651,7 +709,9 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
       except:
           print(f"Erro em {name}")
   ```
+
 - [ ] **Análise On-Chain**
+
   ```python
   import requests
 
@@ -664,6 +724,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### ⚡ Semana 17-18: Polars para Performance + Estrutura de Dados
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos (Polars focado):**
    - **Polars vs Pandas:** https://www.youtube.com/watch?v=mi5jXp_NrAY
    - **Polars Tutorial (Data Science):** https://www.youtube.com/watch?v=mi5jXp_NrAY
@@ -682,6 +743,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Notebook comparando Pandas vs Polars + estrutura de dados profissional
 
 - [ ] **Estrutura Profissional de Dados**
+
   ```python
   import polars as pl
   import os
@@ -753,6 +815,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🔄 Semana 19-20: Múltiplas Exchanges
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo (arquitetura de bot + dados de exchange):**
    - Part Time Larry (APIs/dados): https://www.youtube.com/@parttimelarry
 2. **Prática (checklist):**
@@ -762,6 +825,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Um script `monitor_spread.py` + logs + 1 gráfico mostrando spreads ao longo do tempo
 
 - [ ] **Integração Binance, Coinbase, Kraken**
+
   ```python
   exchanges = {
       'binance': ccxt.binance(),
@@ -787,7 +851,9 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
           'venda': max(precos, key=precos.get)
       }
   ```
+
 - [ ] **Análise On-Chain**
+
   ```python
   import requests
 
@@ -796,6 +862,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
       response = requests.get(url)
       return response.json()
   ```
+
 - [ ] **Exercícios Práticos**
   - [ ] Criar sistema de arbitragem automático
   - [ ] Implementar análise de correlação entre exchanges
@@ -803,6 +870,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   - [ ] Criar alertas para oportunidades de arbitragem
 
 ### 🎯 Projeto: Crypto Gems Scanner ("buscar gemas")
+
 - **Objetivo:** criar um sistema que detecta possíveis "gems" (tokens com crescimento/atenção anormal) com regras transparentes e alertas.
 - **Quando iniciar:** após terminar **Semana 17-18** (você já sabe pegar dados de múltiplas exchanges).
 - **Saídas do sistema:**
@@ -824,6 +892,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   - [ ] Backtest do score (evitar overfitting)
 
 **🧭 Como construir (sequência prática):**
+
 1. **MVP 1 — Coleta:**
    - Baixar top N por volume (CoinGecko) + OHLCV (CCXT)
 2. **MVP 2 — Score:**
@@ -848,14 +917,16 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 > **� XP Necessário:** 4,000 XP para completar esta fase
 
 **�� Cursos Recomendados (Avançado):**
+
 - [ ] **StatQuest (ML/estatística aplicada)**
 - [ ] **Deep Learning Specialization (Coursera - Andrew Ng)**
 
-**📅 Progresso da Fase 4:** 0/24 semanas completas | ___ horas estudadas
+**📅 Progresso da Fase 4:** 0/24 semanas completas | \_\_\_ horas estudadas
 
 ### 🕷️ Semana 23-24: Web Scraping Financeiro
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo (scraping em Python):**
    - freeCodeCamp.org (Python): https://www.youtube.com/@freecodecamp
 2. **Prática (checklist):**
@@ -864,6 +935,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - `scrape_news.py` + CSV + notebook com contagem de termos (ex: BTC/ETH)
 
 - [ ] **BeautifulSoup e Selenium**
+
   ```python
   from bs4 import BeautifulSoup
   import requests
@@ -882,6 +954,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🌳 Semana 25-26: Random Forest para Finanças
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos (Random Forest completo):**
    - **StatQuest (Random Forest):** https://www.youtube.com/watch?v=J4WdyQnYT3s
    - **Krish Naik (Random Forest):** https://www.youtube.com/watch?v=vk5WHHKdrTM
@@ -894,6 +967,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - 1 notebook com modelo Random Forest + backtest simples
 
 - [ ] **Random Forest em Python**
+
   ```python
   from sklearn.ensemble import RandomForestClassifier
   from sklearn.model_selection import train_test_split
@@ -921,6 +995,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🚀 Semana 27-28: XGBoost para Trading
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos (XGBoost completo):**
    - **StatQuest (XGBoost):** https://www.youtube.com/watch?v=OtD8wVaFm6E
    - **Krish Naik (XGBoost):** https://www.youtube.com/watch?v=9B-rC9RzLnE
@@ -933,6 +1008,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Modelo XGBoost otimizado + comparação de performance
 
 - [ ] **XGBoost para Séries Temporais**
+
   ```python
   import xgboost as xgb
   from sklearn.model_selection import TimeSeriesSplit
@@ -967,6 +1043,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 📊 Semana 29-30: Ensemble Methods e Avaliação
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos (Ensemble Methods):**
    - **StatQuest (Ensemble Methods):** https://www.youtube.com/watch?v=Un9zObFjBH0
    - **Krish Naik (Voting/Bagging):** https://www.youtube.com/watch?v=7KZAq3FAs5k
@@ -978,6 +1055,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Sistema ensemble completo com backtest
 
 - [ ] **Ensemble para Trading**
+
   ```python
   from sklearn.ensemble import VotingClassifier
   import numpy as np
@@ -1019,6 +1097,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🎯 Semana 31-32: Projeto ML Completo
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos (ML Projects):**
    - **Krish Naik (End-to-End ML):** https://www.youtube.com/watch?v=1t0sBw2_xjE
    - **StatQuest (ML Workflow):** https://www.youtube.com/watch?v=nkpK77I6ixM
@@ -1030,6 +1109,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Projeto completo no GitHub com dashboard
 
 - [ ] **Pipeline Completo**
+
   ```python
   from sklearn.pipeline import Pipeline
   from sklearn.preprocessing import StandardScaler
@@ -1062,6 +1142,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🧠 Semana 33-34: Deep Learning Intro (LSTM)
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos (Deep Learning):**
    - **StatQuest (Neural Networks):** https://www.youtube.com/watch?v=aircAruvnKk
    - **3Blue1Brown (Neural Networks):** https://www.youtube.com/watch?v=aircAruvnKk
@@ -1074,6 +1155,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Modelo LSTM básico + comparação
 
 - [ ] **LSTM para Séries Temporais**
+
   ```python
   import tensorflow as tf
   from tensorflow.keras.models import Sequential
@@ -1104,6 +1186,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 📈 Semana 35-36: Bibliotecas Profissionais de Trading
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos (Bibliotecas profissionais):**
    - **VectorBT Tutorial:** https://www.youtube.com/watch?v=4g3IqB6Z3oM
    - **VectorBT vs Manual Backtesting:** https://www.youtube.com/watch?v=4g3IqB6Z3oM
@@ -1120,6 +1203,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### ⚡ Semana 32-33: Numba para Performance Extrema
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos (Numba focado):**
    - **Numba Tutorial (Official):** https://www.youtube.com/watch?v=UeXa9Qx5x2k
    - **Numba for Scientific Computing:** https://www.youtube.com/watch?v=UeXa9Qx5x2k
@@ -1134,6 +1218,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Notebook comparando Python vs Numba + speedup metrics
 
 - [ ] **Numba para Indicadores Ultra-Rápidos**
+
   ```python
   from numba import jit, njit
   import numpy as np
@@ -1217,6 +1302,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   ```
 
 - [ ] **Monte Carlo para Opções com Numba**
+
   ```python
   @njit
   def monte_carlo_option(S0, K, r, sigma, T, simulations=100000):
@@ -1292,6 +1378,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   ```
 
 - [ ] **Backtest de Alta Frequência com Numba**
+
   ```python
   @njit
   def high_frequency_backtest(prices, volumes, tick_size=0.01, latency_ms=1):
@@ -1384,6 +1471,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   ```
 
 - [ ] **Otimização de Portfólio com Numba**
+
   ```python
   @njit
   def efficient_frontier(returns, num_portfolios=1000):
@@ -1462,6 +1550,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   ```
 
 - [ ] **VectorBT para Backtesting Massivo**
+
   ```python
   import vectorbt as vbt
   import pandas as pd
@@ -1500,6 +1589,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   ```
 
 - [ ] **pandas-ta para Indicadores Avançados**
+
   ```python
   import pandas_ta as ta
   import polars as pl
@@ -1569,6 +1659,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   ```
 
 - [ ] **Comparação: Manual vs Profissional**
+
   ```python
   def compare_manual_vs_professional(df):
       """Compara performance manual vs bibliotecas profissionais"""
@@ -1630,6 +1721,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   ```
 
 - [ ] **Estratégia Massiva com VectorBT**
+
   ```python
   def massive_strategy_search(df):
       """Busca massiva de estratégias com VectorBT"""
@@ -1673,6 +1765,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   ```
 
 - [ ] **Previsão com scikit-learn**
+
   ```python
   from sklearn.ensemble import RandomForestRegressor
   from sklearn.model_selection import train_test_split
@@ -1691,6 +1784,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🧠 Semana 27-28: Deep Learning para Time Series
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo (intuição + prática):**
    - 3Blue1Brown (intuição): https://www.youtube.com/@3blue1brown
 2. **Prática (checklist):**
@@ -1701,6 +1795,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - 1 notebook com pipeline completo + relatório honesto (baseline vs LSTM)
 
 - [ ] **LSTM com TensorFlow/Keras**
+
   ```python
   from tensorflow.keras.models import Sequential
   from tensorflow.keras.layers import LSTM, Dense
@@ -1715,7 +1810,9 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   model.compile(optimizer='adam', loss='mse')
   model.fit(X_train, y_train, epochs=50, batch_size=32)
   ```
+
 - [ ] **Redes Neurais para Trading**
+
   ```python
   from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten
 
@@ -1728,7 +1825,9 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
       Dense(1)
   ])
   ```
+
 - [ ] **Transformers para NLP Financeiro**
+
   ```python
   from transformers import pipeline
 
@@ -1743,6 +1842,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
        "Tesla stocks are falling down."]
   )
   ```
+
 - [ ] **Exercícios Práticos**
   - [ ] Modelo LSTM para prever preços de Bitcoin
   - [ ] Sistema de análise de sentimento em tempo real
@@ -1751,6 +1851,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### ⚡ Semana 29-30: Processamento em Tempo Real
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo (websockets em Python):**
    - Sentdex: https://www.youtube.com/@sentdex
 2. **Prática (checklist):**
@@ -1759,6 +1860,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - `stream_trades.py` + CSV/SQLite + gráfico de volume/volatilidade por minuto
 
 - [ ] **WebSockets e Streaming**
+
   ```python
   import websocket
   import json
@@ -1775,6 +1877,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🚨 Semana 31-32: Sistema de Alertas
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo (bots/alertas em Python):**
    - freeCodeCamp.org: https://www.youtube.com/@freecodecamp
 2. **Prática (checklist):**
@@ -1784,6 +1887,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - `alerts.py` rodando a cada X minutos + 5 alertas testados
 
 - [ ] **Notificações e Telegram**
+
   ```python
   import telegram
 
@@ -1797,6 +1901,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 📚 Biblioteca da Fase 4 (opcional)
 
 **📚 Recursos de Estudo - Deep Learning (use junto com as semanas 27-28):**
+
 - **Documentação (oficial):**
   - Keras (guide): https://keras.io/
   - TensorFlow (docs): https://www.tensorflow.org/
@@ -1818,12 +1923,14 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 > **� XP Necessário:** 5,000 XP para completar esta fase
 
 **�� Cursos Recomendados (Especialista):**
+
 - [ ] **FastAPI Complete Course** (gratuito + documentação)
 - [ ] **Streamlit Tutorials** (gratuito)
 
-**📅 Progresso da Fase 5:** 0/20 semanas completas | ___ horas estudadas
+**📅 Progresso da Fase 5:** 0/20 semanas completas | \_\_\_ horas estudadas
 
 **✅ Antes de começar a Semana 33-34: Git + GitHub (checkpoint avançado para projeto grande)**
+
 - Objetivo: criar um repositório único (web) para seu sistema integrado, com histórico limpo e organização.
 - **Vídeos de reforço (avançado):**
   - **Git avançado (branches, merge, rebase):** https://www.youtube.com/watch?v=4P6aT6J3x2M (parte 2)
@@ -1832,6 +1939,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 - Faça o checklist completo na seção **"🚀 Criando seu Portfólio e GitHub"** (mais abaixo no arquivo).
 
 **🧭 Como estudar esta fase (ordem sugerida):**
+
 1. **FastAPI (API do sistema):**
    - Docs: https://fastapi.tiangolo.com/
    - Vídeo (curso completo): https://www.youtube.com/@freecodecamp
@@ -1844,6 +1952,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🚀 Semana 31-32: APIs e Streaming em Tempo Real
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo/Docs (API + streaming):**
    - FastAPI docs: https://fastapi.tiangolo.com/
    - **Async Python:** [Corey Schafer](https://www.youtube.com/watch?v=9yCSQ7yMA74) - Async/Await completo
@@ -1860,6 +1969,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 #### **⚡ Async Python Essencial**
 
 **🎯 Por que Async é CRUCIAL para finanças:**
+
 - **Streaming:** Múltiplas fontes de dados simultâneas
 - **Performance:** Milhares de requisições concorrentes
 - **Tempo Real:** Preços, notícias, indicadores ao vivo
@@ -1878,6 +1988,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
      from fastapi import FastAPI, WebSocket
      ```
    - 💡 **Código base:**
+
      ```python
      import asyncio
      import aiohttp
@@ -1904,6 +2015,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
      - **Real Python:** [Async Web Scraping](https://www.youtube.com/watch?v=5XqA9m8BQ_Y) - Dados em tempo real
      - **Coding Entrepeneur:** [Trading Bot Async](https://www.youtube.com/watch?v=8F7k2k2q5Jk) - Bot com async
    - 💡 **Código base:**
+
      ```python
      from fastapi import FastAPI, WebSocket
      import asyncio
@@ -1938,6 +2050,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
      - **TestDriven.io:** [Async CRUD](https://www.youtube.com/watch?v=0QI3x3M4p8M) - Operações assíncronas
      - **ArjanCodes:** [Clean Architecture](https://www.youtube.com/watch?v=7Lq6s9gZK_I) - Estrutura limpa
    - 💡 **Código base:**
+
      ```python
      from fastapi import FastAPI, HTTPException
      from pydantic import BaseModel
@@ -1964,6 +2077,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
      ```
 
 **📈 Aplicações Financeiras com Async:**
+
 - **Real-time Trading:** Preços live, ordens instantâneas
 - **Portfolio Monitoring:** Atualizações simultâneas de múltiplos ativos
 - **Risk Management:** Cálculos em tempo real de exposição
@@ -1977,6 +2091,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🏛️ Semana 33-34: Arquitetura do Sistema
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo/Docs (FastAPI + estrutura):**
    - FastAPI docs: https://fastapi.tiangolo.com/
 2. **Prática (checklist):**
@@ -2014,6 +2129,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🗄️ Semana 35-36: Banco de Dados Financeiro
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo/Docs (SQLite/Postgres):**
    - SQLite Python: https://docs.python.org/3/library/sqlite3.html
 2. **Prática (checklist):**
@@ -2023,6 +2139,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Banco local com dados reais (mínimo 1 ativo) + consultas funcionando
 
 - [ ] **SQLite/PostgreSQL**
+
   ```python
   import sqlite3
   from datetime import datetime
@@ -2043,6 +2160,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🌐 Semana 37-38: API REST do Sistema
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo/Docs (FastAPI):**
    - FastAPI docs: https://fastapi.tiangolo.com/
 2. **Prática (checklist):**
@@ -2052,6 +2170,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - API local respondendo e documentada no `/docs`
 
 - [ ] **FastAPI**
+
   ```python
   from fastapi import FastAPI
   import uvicorn
@@ -2071,6 +2190,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 📊 Semana 39-40: Dashboard e Visualização
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeo/Docs (Streamlit):**
    - Streamlit docs: https://docs.streamlit.io/
 2. **Prática (checklist):**
@@ -2079,6 +2199,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Dashboard local que consome sua API/DB e mostra métricas
 
 - [ ] **Dashboard e Visualização**
+
   ```python
   import streamlit as st
 
@@ -2110,12 +2231,14 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 > **🏆 Grande Prêmio:** **TÍTULO DE ESPECIALISTA EM PYTHON FINANCEIRO** 🌟
 
 **📚 Cursos Recomendados (Produção-Deploy):**
+
 - [ ] **Docker Mastery (Nana Janashia)** - https://www.youtube.com/@NanaJanashia
 - [ ] **DevOps Bootcamp** - https://www.youtube.com/@freeCodeCamp
 
-**📅 Progresso da Fase 6:** 0/24 semanas completas | ___ horas estudadas
+**📅 Progresso da Fase 6:** 0/24 semanas completas | \_\_\_ horas estudadas
 
 **🧭 Como estudar esta fase (pipeline de produção):**
+
 1. **Containerizar** → **Deploy** → **Estratégias** → **Monitorar** → **Otimizar**
 2. Cada passo builda sobre o anterior
 3. Foco em sistema funcionando 24/7
@@ -2123,6 +2246,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🐳 Semana 53-54: Docker para Trading Systems
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos (Docker completo passo a passo):**
    - **Docker Tutorial for Beginners (Nana Janashia):** https://www.youtube.com/watch?v=3c-iBn7dEGU
    - **Docker Compose in 12 Minutes:** https://www.youtube.com/watch?v=OMTkpQ-2QW0
@@ -2137,6 +2261,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Sistema containerizado funcionando localmente
 
 - [ ] **Dockerfile para Trading System**
+
   ```dockerfile
   # Multi-stage build para imagem otimizada
   FROM python:3.9-slim as builder
@@ -2164,8 +2289,9 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   ```
 
 - [ ] **Docker Compose Completo**
+
   ```yaml
-  version: '3.8'
+  version: "3.8"
 
   services:
     api:
@@ -2234,6 +2360,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### ☁️ Semana 55-56: Deploy em Produção (Cloud)
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos (Deploy passo a passo):**
    - **Deploy FastAPI to AWS (TestDriven.io):** https://www.youtube.com/watch?v=0L9RSUnk_5U
    - **Docker + AWS ECS:** https://www.youtube.com/watch?v=s_oqw9A5HDE
@@ -2248,6 +2375,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Sistema rodando em produção com HTTPS
 
 - [ ] **GitHub Actions para Deploy**
+
   ```yaml
   name: Deploy Trading System
 
@@ -2259,21 +2387,22 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
     deploy:
       runs-on: ubuntu-latest
       steps:
-      - uses: actions/checkout@v2
+        - uses: actions/checkout@v2
 
-      - name: Build Docker image
-        run: docker build -t trading-system .
+        - name: Build Docker image
+          run: docker build -t trading-system .
 
-      - name: Deploy to DigitalOcean
-        run: |
-          # Deploy commands
-          docker push ${{ secrets.DOCKER_REGISTRY }}/trading-system
-          # Update production container
+        - name: Deploy to DigitalOcean
+          run: |
+            # Deploy commands
+            docker push ${{ secrets.DOCKER_REGISTRY }}/trading-system
+            # Update production container
   ```
 
 ### 📈 Semana 57-58: Estratégias Quantitativas em Produção
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos (Estratégias em produção):**
    - **Algorithmic Trading (QuantInsti):** https://www.youtube.com/c/QuantInsti
    - **Pairs Trading Implementation:** https://www.youtube.com/watch?v=XXO0_sTQ0T4
@@ -2287,6 +2416,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Estratégias rodando em produção com monitoramento
 
 - [ ] **Strategy Engine para Produção**
+
   ```python
   class ProductionStrategy:
       def __init__(self, redis_client, db_client):
@@ -2327,6 +2457,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 📊 Semana 59-60: Monitoramento e Logging
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos (Monitoramento passo a passo):**
    - **Grafana + Prometheus:** https://www.youtube.com/watch?v=h4sw2p3Qa9Q
    - **Logging Best Practices:** https://www.youtube.com/watch?v=j9zqgsGcneU
@@ -2340,9 +2471,10 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Dashboard de monitoramento funcionando
 
 - [ ] **Monitoring Stack**
+
   ```yaml
   # docker-compose.monitoring.yml
-  version: '3.8'
+  version: "3.8"
 
   services:
     prometheus:
@@ -2373,6 +2505,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🚀 Semana 61-62: Sistema Completo em Produção
 
 **✅ Passo a passo (faça nesta ordem):**
+
 1. **Vídeos (Sistemas completos):**
    - **Production Python Apps:** https://www.youtube.com/watch?v=0L9RSUnk_5U
    - **System Design:** https://www.youtube.com/watch?v=SqTOJQZ5P_U
@@ -2385,6 +2518,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Sistema completo documentado e operacional
 
 - [ ] **System Health Check**
+
   ```python
   class SystemHealth:
       def __init__(self):
@@ -2422,6 +2556,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ## 💼 Monetização e Freelance (Integrado)
 
 ### 🎯 Nichos Mais Rentáveis 2026
+
 - [ ] **Automações + IA** → Scripts que automatizam planilhas Excel, extraem dados de sites, enviam e-mails automáticos, chatbots com GPT/OpenAI, integração com WhatsApp/Telegram
 - [ ] **Bots e scrapers** → Bots para Telegram/Discord, monitoramento de preços, extração de dados de e-commerce ou redes sociais
 - [ ] **Análise de dados e relatórios** → Usando Pandas, Matplotlib, Jupyter → Dashboards para empresas
@@ -2432,6 +2567,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 ### 🚀 Criando seu Portfólio e GitHub
 
 #### **📅 Quando começar a construir projetos (após Fase 2):**
+
 1. **Crie repositório no GitHub**
    ```bash
    mkdir portfolio-python-financeiro
@@ -2459,6 +2595,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - **Deploy no Streamlit Cloud**
 
 #### **📅 Versionamento com Git:**
+
 ```bash
 # Commit inicial
 git add .
@@ -2473,6 +2610,7 @@ git push origin v1.0
 ```
 
 #### **📅 Boas práticas:**
+
 - **Commits descritivos** (o que foi feito e porquê)
 - **Branchs separadas** para features (feature/nome-da-feature)
 - **Issues e Projects** para organizar desenvolvimento
@@ -2480,6 +2618,7 @@ git push origin v1.0
 - **Licença MIT** para facilitar compartilhamento
 
 #### **📅 Construindo presença online:**
+
 - **GitHub Pages** para portfólio
 - **LinkedIn** com projetos e certificados
 - **Artigos técnicos** no Medium/Dev.to
@@ -2488,6 +2627,7 @@ git push origin v1.0
 - **Perfil técnico** completo e atualizado
 
 #### **📅 Segurança e Backup:**
+
 - **Backups automáticos** no GitHub (código e dados)
 - **Chaves de API** em ambiente seguro (.env)
 - **Não versionar segredos:** criar `.gitignore` para `.env` e credenciais
@@ -2499,17 +2639,20 @@ git push origin v1.0
 - **Monitoramento de projetos** com GitHub Actions
 
 ### 💰 Plataformas Freelance
+
 - [ ] **Upwork** → Internacional, paga em dólares (melhor taxa de câmbio). Mais concorrência, mas projetos maiores ($200–$2,000+)
 - [ ] **Fiverr** → Venda "gigs" fixos (ex: "I will build a Python automation" por $25–$200)
 - [ ] **Toptal** → Vagas mais seletivas, ticket alto (bom depois de portfólio forte)
 - [ ] **Freelancer.com** → Grande volume (triagem necessária)
 
 ### 📈 Renda Realista
+
 - [ ] **Iniciante (3–6 meses):** US$200–US$1,000/mês (2–5 projetos pequenos)
 - [ ] **Intermediário (1 ano, bom portfólio):** US$1,500–US$4,000/mês
 - [ ] **Avançado (clientes recorrentes + Upwork):** US$5,000–US$10,000+/mês
 
 ### 📋 Formalização
+
 - [ ] **Formalização:** verifique regras do seu país/estado (foco em emissão de invoice e compliance)
 - [ ] **Impostos:** registre ganhos e consulte contador local quando escalar
 

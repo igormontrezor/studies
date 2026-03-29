@@ -1,0 +1,6 @@
+Lucas Montrezor;3;1,0,1;0.6666666666666666;2
+Igor Montrezor;1;0;0.0;0
+Pedrao Gol;5;1,1,2,0,0;0.8;4
+Joao Goncalves;1;1;1.0;1
+Hugo Souza;2;1,0;0.5;1
+Tatiane Montrezor;3;1,0,2;1.0;3
