@@ -260,17 +260,17 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 3. **Entrega (fim da semana 6):**
    - Um notebook com: limpeza + retornos + volatilidade + candlestick + SMA/EMA
 
-- [ ] **Manipulação de Dados**
+- [x] **Manipulação de Dados**
   - [x] `pandas`: `pd.read_csv()`, `df.head()`, `df.describe()`
-  - [ ] `numpy`: `np.array()`, `np.mean()`, `np.std()`
+  - [x] `numpy`: `np.array()`, `np.mean()`, `np.std()`
     > ** Poder Adquirido:** Dados financeiros agora obedecem você!
 - [x] **Trabalho com Tempo**
   - [x] `datetime`: `datetime.now()`, `timedelta(days=1)`
   - [x] `pandas`: `pd.to_datetime()`, `df.resample('1H')`
     > **⏰ Habilidade Desbloqueada:** Domínio temporal!
-- [ ] **Limpeza e Transformação**
-  - [ ] `df.dropna()`, `df.fillna()`, `df.groupby()`
-  - [ ] `df.merge()`, `df.pivot_table()`, `df.melt()`
+- [x] **Limpeza e Transformação**
+  - [x] `df.dropna()`, `df.fillna()`, `df.groupby()`
+  - [x] `df.merge()`, `df.pivot_table()`, `df.melt()`
     > **🧹 Poder Adquirido:** Dados impecáveis!
 - [x] **Análise Exploratória**
   - [x] `df.info()`, `df.describe()`, `df.corr()`
@@ -305,7 +305,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
       btc_data = df['BTC-USD'][['Open', 'High', 'Low', 'Close', 'Volume']]
       ```
 
-  - [ ] **Calcular retornos (simples/log) e volatilidade (rolling)**
+  - [x] **Calcular retornos (simples/log) e volatilidade (rolling)**
     - 📺 **Vídeos Tutoriais:**
       - **Python for Finance:** [Historical Volatility & Risk-Return Ratios](https://www.youtube.com/watch?v=j4c2XqiJzRU) - Volatilidade histórica e retornos
       - **AlphaBench:** [Portfolio Volatility with Python](https://www.youtube.com/watch?v=GKMSG_3MVGM) - Cálculo de volatilidade de portfólio
@@ -324,7 +324,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
       df['volatilidade'] = df['retorno_simples'].rolling(window=20).std() * np.sqrt(252)
       ```
 
-  - [ ] **Plotar candlesticks + SMA/EMA (Plotly)**
+  - [x] **Plotar candlesticks + SMA/EMA (Plotly)**
     - 📺 **Vídeos Tutoriais:**
       - **Plotly With (DASH):** [Plotly Finance Tutorial](https://www.youtube.com/watch?v=Qx5eFVUdDxk&list=PLYD54mj9I2JevdabetHsJ3RLCeMyBNKYV) - Gráficos financeiros interativos
       - **Corey Schafer:** [Pandas & Plotly](https://www.youtube.com/watch?v=9GYmFXBitBw&list=PLBSCvBlTOLa8rf2kGkP_Bx5xXqT-er4Yq) - Visualização de dados financeiros
@@ -355,6 +355,48 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 
       > **🎯 Competência a Dominar:** Análise técnica completa!
       ````
+
+  - [ ] **Plotar MACD (Moving Average Convergence Divergence)**
+    - 📺 **Vídeos Tutoriais:**
+      - **TradingView:** [MACD Indicator Explained](https://www.youtube.com/watch?v=R5HrG4bA7_A) - Como funciona MACD
+      - **Data Science Garage:** [Technical Indicators](https://www.youtube.com/watch?v=vT0-eLOw5Uk) - Indicadores completos
+      - **QuantInsti:** [MACD Calculation](https://www.youtube.com/watch?v=kB8y0W0Jq9M) - Cálculo passo a passo
+    - 💡 **Código base:
+
+      ````python
+      # Cálculo MACD
+      def calculate_macd(df, fast=12, slow=26, signal=9):
+          exp1 = df['Close'].ewm(span=fast).mean()
+          exp2 = df['Close'].ewm(span=slow).mean()
+          macd = exp1 - exp2
+          signal_line = macd.ewm(span=signal).mean()
+          histogram = macd - signal_line
+          return macd, signal_line, histogram
+
+      # Aplicar MACD
+      macd, signal, histogram = calculate_macd(df)
+
+      # Plotar com Preços
+      fig = make_subplots(rows=2, cols=1, shared_xaxes=True)
+
+      # Preço + MACD
+      fig.add_trace(go.Scatter(x=df.index, y=df['Close'], name='Price'), row=1, col=1)
+      fig.add_trace(go.Scatter(x=df.index, y=macd, name='MACD', line=dict(color='blue')), row=1, col=1)
+      fig.add_trace(go.Scatter(x=df.index, y=signal, name='Signal', line=dict(color='red')), row=1, col=1)
+
+      # Histograma
+      colors = ['green' if x > 0 else 'red' for x in histogram]
+      fig.add_trace(go.Bar(x=df.index, y=histogram, name='Histogram', marker_color=colors), row=2, col=1)
+
+      fig.update_layout(title='MACD Analysis', template='plotly_dark')
+      fig.show()
+
+      # Sinais simples
+      buy_signal = (macd > signal) & (macd.shift(1) <= signal.shift(1))
+      sell_signal = (macd < signal) & (macd.shift(1) >= signal.shift(1))
+      ````
+
+      > **🎯 Competência a Dominar:** Análise de momentum com MACD!
 
 ### Semana 5-6: Estruturas de Dados Financeiras (OOP essencial)
 
