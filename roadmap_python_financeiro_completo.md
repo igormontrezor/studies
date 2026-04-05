@@ -50,19 +50,19 @@ Este roadmap foi projetado para dominar Python e criar sistemas financeiros comp
 ### 🏆 Badges Especiais:
 
 - **🎖️ Badge de Fundamentos Python:** +500 XP (Concluído!)
-- **🎖️ Badge de Manipulação de Dados:** +300 XP
+- **🎖️ Badge de Manipulação de Dados:** +300 XP (Concluído!)
 - **🎖️ Badge de Análise Financeira:** +400 XP
 - **🎖️ Badge de APIs Cripto:** +600 XP
 - **🎖️ Badge de Machine Learning:** +800 XP
 - **🎖️ Badge de Arquitetura:** +1,000 XP
 - **🎖️ Badge de Estratégias:** +1,200 XP
 
-### ⭐ Seu Status Atual:
+> **⭐ Seu Status Atual:**
 
-- **Nível:** Python Intermediário 🥉
-- **XP Acumulado:** 500/20,000 XP
-- **Badge Atual:** Badge de Fundamentos Python ✅
-- **Próximo Badge:** Badge de Manipulação de Dados
+- **Nível:** Analista de Dados Financeiro Júnior 🥈
+- **XP Acumulado:** 1,000/20,000 XP
+- **Badge Atual:** Badge de Manipulação de Dados ✅
+- **Próximo Badge:** Badge de OOP Financeiro (em andamento)
 
 ## ⏱️ Ritmo de estudo (ajustado conforme sua experiência)
 
@@ -129,16 +129,16 @@ Use esta sequência como "linha única" do que fazer a cada etapa. A regra é:
 
 ---
 
-# 🎯 FASE 1: FUNDAMENTOS PYTHON ESSENCIAIS (10-12 SEMANAS) - 17% COMPLETO
+# 🎯 FASE 1: FUNDAMENTOS PYTHON ESSENCIAIS (10-12 SEMANAS) - 50% COMPLETO
 
 ---
 
 ---
 
-> **⚡ Seu Progresso:** **2/12 semanas completas** | **Curso concluído:** Automate the Boring Stuff with Python Programming
-> **🏆 Nível Evolutivo:** Fundamentos sólidos conquistados! Você evoluiu de iniciante para intermediário em Python!
-> **🎖️ Sistema de Recompensas:** **NÍVEL ATUAL: PYTHON INTERMEDIÁRIO** 🥉
-> **🚀 Habilidades Desbloqueadas:** Type hints, List comprehensions, Arquitetura modular
+> **⚡ Seu Progresso:** **6/12 semanas completas** | **Cursos concluídos:** Automate the Boring Stuff + Pandas/Análise Financeira
+> **🏆 Nível Evolutivo:** Analista de Dados Financeiro Júnior! Você já constrói sistemas reais!
+> **🎖️ Sistema de Recompensas:** **NÍVEL ATUAL: ANALISTA DE DADOS FINANCEIRO JÚNIOR** �
+> **🚀 Habilidades Desbloqueadas:** Type hints, Pandas avançado, Análise técnica, Estrutura OOP (em andamento)
 
 ### ✅ Semana 1-2: Python Básico Avançado - **CONCLUÍDO** 🎉
 
@@ -243,22 +243,24 @@ c:\Projects Python\
 
 - Faça o checklist completo na seção **"🚀 Criando seu Portfólio e GitHub"** (mais abaixo no arquivo).
 
-### 📊 Semana 5-6: Python para Dados - **A FAZER**
+### 📊 Semana 5-6: Python para Dados - **CONCLUÍDO** 🎉
 
-**📅 Período:** 02/03/2026 - **Em andamento**
+**📅 Período:** 02/03/2026 - 15/03/2026
 
-**Objetivo:** Dominar Pandas para análise financeira (BTC, ETH, SPY)
+> **🌟 Dados Financeiros Dominados!** Você agora manipula BTC/ETH/SPY como um profissional!
+> **🚀 Nível Alcançado:** Analista de Dados Financeiro Júnior
+> **🏅 Recompensa Desbloqueada:** **BADGE DE MANIPULAÇÃO DE DADOS** 📊
+> **⭐ XP Ganhos:** +300 XP | **Total Acumulado:** 1,000/10,000 XP
 
-**✅ Passo a passo (faça nesta ordem):**
-Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Intermediário: Corey Schafer + Data School Avançado: Cursos especializados em Coursera com certificação
+**✅ Passo a passo (feito):**
 
 1. **Vídeo (Pandas):**
-   - Corey Schafer (Pandas): https://www.youtube.com/@coreyms
-   - Hashtag Programação (Pandas): https://www.youtube.com/watch?v=C0aj3FjN5e0
+   - [x] Corey Schafer (Pandas): https://www.youtube.com/@coreyms
+   - [x] Hashtag Programação (Pandas): https://www.youtube.com/watch?v=C0aj3FjN5e0
 2. **Prática (guiada):**
-   - Kaggle Learn (Pandas): https://www.kaggle.com/learn/pandas
+   - [x] Kaggle Learn (Pandas): https://www.kaggle.com/learn/pandas
 3. **Entrega (fim da semana 6):**
-   - Um notebook com: limpeza + retornos + volatilidade + candlestick + SMA/EMA
+   - [x] Um notebook com: limpeza + retornos + volatilidade + candlestick + SMA/EMA
 
 - [x] **Manipulação de Dados**
   - [x] `pandas`: `pd.read_csv()`, `df.head()`, `df.describe()`
@@ -356,7 +358,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
       > **🎯 Competência a Dominar:** Análise técnica completa!
       ````
 
-  - [ ] **Plotar MACD (Moving Average Convergence Divergence)**
+  - [x] **Plotar MACD (Moving Average Convergence Divergence)**
     - 📺 **Vídeos Tutoriais:**
       - **TradingView:** [MACD Indicator Explained](https://www.youtube.com/watch?v=R5HrG4bA7_A) - Como funciona MACD
       - **Data Science Garage:** [Technical Indicators](https://www.youtube.com/watch?v=vT0-eLOw5Uk) - Indicadores completos
@@ -398,46 +400,210 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 
       > **🎯 Competência a Dominar:** Análise de momentum com MACD!
 
-### Semana 5-6: Estruturas de Dados Financeiras (OOP essencial)
+### 🏗️ Semana 7-8: Estruturas de Dados Financeiras (OOP essencial) - **A FAZER**
+
+**📅 Período:** 16/03/2026 - **Em andamento**
+
+> **🎯 Objetivo Final da Fase 1:** Organizar seu código com OOP profissional para sistemas financeiros!
+> **🚀 Próximo Nível:** Engenheiro de Software Financeiro Júnior
+> **🏅 Recompensa Esperada:** **BADGE DE OOP FINANCEIRO** 🏗️
+> **⭐ XP a Ganhar:** +500 XP | **Meta Final:** 1,500/10,000 XP
 
 **✅ Passo a passo (faça nesta ordem):**
 
-1. **Vídeo (OOP):**
-   - Corey Schafer (OOP): https://www.youtube.com/@coreyms
+1. **Vídeo (OOP - Corey Schafer - Playlist completa):**
+   - **Playlist OOP Completa:** https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
+   - **Vídeos específicos (assistir em ordem):**
+     - [Tutorial 1: Classes and Instances](https://www.youtube.com/watch?v=ZDa-Z5JzLYM)
+     - [Tutorial 2: Class Variables](https://www.youtube.com/watch?v=BJ-VvGyQxho)
+     - [Tutorial 3: classmethods and staticmethods](https://www.youtube.com/watch?v=rq8cL2XMM5M)
+     - [Tutorial 4: Inheritance - Creating Subclasses](https://www.youtube.com/watch?v=RSl87lqOXDE)
+     - [Tutorial 5: Special (Magic/Dunder) Methods](https://www.youtube.com/watch?v=3ohzBxoFHAY)
+     - [Tutorial 6: Property Decorators - Getters, Setters](https://www.youtube.com/watch?v=jCzT9XFZ5bw)
 2. **Prática (checklist):**
    - Criar classes `Asset`, `Position`, `Portfolio`
    - Gerar relatório CSV/JSON + equity curve
-3. **Entrega (fim da semana 6):**
-   - Um mini "portfolio tracker" com dados de `BTC/USDT` e `SPY`
+3. **Entrega (fim da semana 8):**
+   - Um mini "portfolio tracker" com dados de `BTC/USDT` e `SPY` usando classes OOP
 
 - [ ] **Classes e Objetos**
-
+  - 📺 **Vídeo:** [Classes and Instances](https://www.youtube.com/watch?v=ZDa-Z5JzLYM)
   ```python
-  class Ativo:
-      def __init__(self, symbol, preco):
+  class Asset:
+      def __init__(self, symbol: str, price: float):
           self.symbol = symbol
-          self.preco = preco
+          self.price = price
 
-  class Acao(Ativo):
-      def __init__(self, symbol, preco, quantidade):
-          super().__init__(symbol, preco)
-          self.quantidade = quantidade
+      def __repr__(self) -> str:
+          return f"Asset(symbol='{self.symbol}', price={self.price})"
 
-      def valor_total(self):
-          return self.preco * self.quantidade
+  class Stock(Asset):
+      def __init__(self, symbol: str, price: float, quantity: int):
+          super().__init__(symbol, price)
+          self.quantity = quantity
 
       @property
-      def preco_formatado(self):
-          return f"${self.preco:,.2f}"
+      def total_value(self) -> float:
+          return self.price * self.quantity
+
+      @property
+      def formatted_price(self) -> str:
+          return f"${self.price:,.2f}"
+  ```
+
+- [ ] **Class Variables e @classmethod**
+  - 📺 **Vídeo:** [Class Variables](https://www.youtube.com/watch?v=BJ-VvGyQxho)
+  - 📺 **Vídeo:** [Classmethods and Staticmethods](https://www.youtube.com/watch?v=rq8cL2XMM5M)
+  ```python
+  class Asset:
+      # Class variable
+      asset_types = ['stock', 'crypto', 'commodity']
+
+      @classmethod
+      def from_dataframe(cls, df: pd.DataFrame, symbol: str):
+          """Factory method: cria Asset a partir de DataFrame"""
+          return cls(symbol=symbol, price=df['Close'].iloc[-1])
+
+      @staticmethod
+      def validate_symbol(symbol: str) -> bool:
+          """Validação estática de símbolo"""
+          return len(symbol) > 0 and symbol.isalpha()
   ```
 
 - [ ] **Herança e Polimorfismo**
-- [ ] **Decoradores**: `@property`, `@staticmethod`
+  - 📺 **Vídeo:** [Inheritance - Creating Subclasses](https://www.youtube.com/watch?v=RSl87lqOXDE)
+  ```python
+  class Position:
+      def __init__(self, asset: Asset, quantity: int):
+          self.asset = asset
+          self.quantity = quantity
+
+      def calculate_pnl(self, current_price: float) -> float:
+          """Polimorfismo: cada tipo de posição pode calcular P&L diferente"""
+          return (current_price - self.asset.price) * self.quantity
+
+  class LongPosition(Position):
+      def calculate_pnl(self, current_price: float) -> float:
+          return super().calculate_pnl(current_price)
+
+  class ShortPosition(Position):
+      def calculate_pnl(self, current_price: float) -> float:
+          return -super().calculate_pnl(current_price)
+  ```
+
+- [ ] **Métodos Mágicos (Dunder Methods)**
+  - 📺 **Vídeo:** [Special (Magic/Dunder) Methods](https://www.youtube.com/watch?v=3ohzBxoFHAY)
+  ```python
+  class Portfolio:
+      def __init__(self, name: str):
+          self.name = name
+          self.positions = []
+
+      def __repr__(self) -> str:
+          return f"Portfolio(name='{self.name}', positions={len(self.positions)})"
+
+      def __len__(self) -> int:
+          return len(self.positions)
+
+      def __getitem__(self, index: int) -> Position:
+          return self.positions[index]
+
+      def __iter__(self):
+          return iter(self.positions)
+  ```
+
+- [ ] **Property Decorators**
+  - 📺 **Vídeo:** [Property Decorators - Getters, Setters](https://www.youtube.com/watch?v=jCzT9XFZ5bw)
+  ```python
+  class Portfolio:
+      def __init__(self, name: str):
+          self.name = name
+          self._positions = []  # "privado"
+
+      @property
+      def total_value(self) -> float:
+          return sum(pos.calculate_pnl(pos.asset.price) for pos in self._positions)
+
+      @property
+      def positions(self) -> list:
+          return self._positions.copy()  # proteção interna
+
+      def add_position(self, position: Position):
+          self._positions.append(position)
+  ```
+
+- [ ] **Composição vs Herança (Design Pattern)**
+  - **Regra de ouro:** Prefira composição quando possível
+  ```python
+  # Composição: Portfolio "tem" Positions (melhor para finanças)
+  class Portfolio:
+      def __init__(self, name: str):
+          self.name = name
+          self.positions = []  # composição
+          self.data_provider = DataProvider()  # composição
+
+  # Evite herança profunda demais em sistemas financeiros
+  ```
+
+- [ ] **Validação e Exceções dentro das Classes**
+  - 📺 **Vídeo:** [Python Tutorial: Type Hints](https://www.youtube.com/watch?v=RwH2UzC2rIo)
+  - 📺 **Vídeo:** [Python Unit Test Tutorial](https://www.youtube.com/watch?v=6tNS--WetLI)
+  ```python
+  class Position:
+      def __init__(self, asset: Asset, quantity: int):
+          if not isinstance(asset, Asset):
+              raise TypeError("asset deve ser instância de Asset")
+
+          if quantity <= 0:
+              raise ValueError("quantity deve ser positiva")
+
+          self.asset = asset
+          self.quantity = quantity
+
+      def validate_data(self, df: pd.DataFrame) -> bool:
+          required_columns = ['Open', 'High', 'Low', 'Close', 'Volume']
+          missing = [col for col in required_columns if col not in df.columns]
+
+          if missing:
+              raise ValueError(f"Colunas faltando: {missing}")
+
+          if df.empty:
+              raise ValueError("DataFrame está vazio")
+
+          return True
+  ```
+
+- [ ] **Type Hints em Classes**
+  - 📺 **Vídeo:** [Type Hints - From Basic Annotations to Advanced](https://www.youtube.com/watch?v=RwH2UzC2rIo)
+  ```python
+  from typing import List, Dict, Optional, Union
+  from dataclasses import dataclass
+
+  @dataclass
+  class Signal:
+      symbol: str
+      signal_type: str  # 'buy' ou 'sell'
+      confidence: float
+      timestamp: datetime
+
+  class Strategy:
+      def __init__(self, name: str):
+          self.name: str = name
+          self.signals: List[Signal] = []
+
+      def generate_signals(self, data: pd.DataFrame) -> List[Signal]:
+          """Retorna lista de sinais gerados"""
+          pass
+  ```
+
 - [ ] **Exercícios Práticos**
-  - [ ] Criar classe Portifólio
-  - [ ] Implementar métodos de adicionar/remover ativos
-  - [ ] Calcular valor total do portfólio
-  - [ ] Criar método de rebalanceamento
+  - [ ] Criar classe `Portfolio` com composição de `Position`s
+  - [ ] Implementar métodos de adicionar/remover ativos com validação
+  - [ ] Calcular valor total do portfólio usando `@property`
+  - [ ] Criar método de rebalanceamento com exceções
+  - [ ] Adicionar `@classmethod` factory: `Portfolio.from_csv()`
+  - [ ] Implementar `__repr__` e `__len__` para debugging
+  - [ ] Criar testes simples para validação de dados
 
 ---
 
@@ -500,7 +666,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 
 **📅 Progresso da Fase 2:** 0/12 semanas completas | \_\_\_ horas estudadas
 
-### Semana 7-8: Análise Financeira Básica
+### Semana 9-10: Análise Financeira Básica
 
 **✅ Passo a passo (faça nesta ordem):**
 
@@ -509,7 +675,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 2. **Prática (checklist):**
    - Calcular SMA/EMA/RSI para `BTC/USDT` e `SPY`
    - Gerar um gráfico com preço + SMA/EMA + RSI
-3. **Entrega (fim da semana 8):**
+3. **Entrega (fim da semana 10):**
    - 1 notebook com funções `sma`, `ema`, `rsi` + gráficos + interpretação básica
 
 - [ ] **Indicadores Técnicos**
@@ -530,7 +696,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   - [ ] Retorno simples: `(preco_atual / preco_anterior) - 1`
   - [ ] Retorno logarítmico: `np.log(preco_atual / preco_anterior)`
 
-### 📊 Semana 9-10: Estatística e Probabilidade + SQL Essencial
+### 📊 Semana 11-12: Estatística e Probabilidade + SQL Essencial
 
 **✅ Passo a passo (faça nesta ordem):**
 
@@ -540,7 +706,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Comparar risco/retorno de `BTC`, `ETH`, `SPY`, `GLD`
    - Montar uma tabela com `return`, `vol`, `sharpe`, `max_drawdown`
    - Criar banco SQL com dados históricos
-3. **Entrega (fim da semana 10):**
+3. **Entrega (fim da semana 12):**
    - 1 notebook com métricas, ranking e consultas SQL
 
 ---
@@ -623,7 +789,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   covariance = df.cov()
   ```
 
-### 📊 Semana 11-12: Visualização Financeira
+### 📊 Semana 13-14: Visualização Financeira
 
 **✅ Passo a passo (faça nesta ordem):**
 
@@ -631,7 +797,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
    - Plotly (canal/short tutorials): https://www.youtube.com/@plotly
 2. **Prática (checklist):**
    - Candlestick de `BTC/USDT` com SMA/EMA e volume
-3. **Entrega (fim da semana 12):**
+3. **Entrega (fim da semana 14):**
    - 1 dashboard simples (Streamlit ou notebook) com candles + indicadores
 
 - [ ] **Matplotlib/Seaborn**
@@ -661,7 +827,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
   fig.show()
   ```
 
-### 🧮 Semana 13-14: Backtesting Básico
+### 🧮 Semana 15-16: Backtesting Básico
 
 **✅ Passo a passo (faça nesta ordem):**
 
@@ -670,7 +836,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 2. **Prática (checklist):**
    - Implementar regras claras de entrada/saída e custo (fee/slippage)
    - Testar em `BTC/USDT` e `SPY` (mesmo modelo, ativos diferentes)
-3. **Entrega (fim da semana 14):**
+3. **Entrega (fim da semana 16):**
    - 1 relatório com equity curve + drawdown + trades + parâmetros
 
 - [ ] **Estratégia Simples**
@@ -708,7 +874,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 
 **📅 Progresso da Fase 3:** 0/20 semanas completas | \_\_\_ horas estudadas
 
-### 🌐 Semana 15-16: APIs de Criptomoedas
+### 🌐 Semana 17-18: APIs de Criptomoedas
 
 **✅ Passo a passo (faça nesta ordem):**
 
@@ -717,7 +883,7 @@ Iniciante: Comece com Hashtag Treinamentos ou Asimov Academy (em português) Int
 2. **Prática (checklist):**
    - Baixar OHLCV (1h e 1d) de `BTC/USDT` e `ETH/USDT`
    - Normalizar timestamps e salvar em `data/` (CSV/Parquet)
-3. **Entrega (fim da semana 16):**
+3. **Entrega (fim da semana 18):**
    - Um script `download_ohlcv.py` + dataset local + notebook validando dados
 
 - [ ] **Binance API**
