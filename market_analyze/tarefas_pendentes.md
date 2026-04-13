@@ -119,30 +119,10 @@ Conceito: Mapear níveis de preço testados múltiplas vezes
 *Última atualização: 01/04/2026 - Versão 0.1 Concluída*
 
 
-ajustar sortino e sharpe do semanal e acertar os sinais
-colocar orientaçao de como usar cada metodo e atributos
-criar classe portifolio em oop_operations_basic
-and
 class MockProvider(PriceProvider):
     def get_price(self, symbol):
         return 100
 
-@dataclass
-  class Signal:
-      symbol: str
-      signal_type: str  # 'buy' ou 'sell'
-      confidence: float
-      timestamp: datetime
-
-  class Strategy:
-      def __init__(self, name: str):
-          self.name: str = name
-          self.signals: List[Signal] = []
-
-      def generate_signals(self, data: pd.DataFrame) -> List[Signal]:
-          """Retorna lista de sinais gerados"""
-          pass
-  ```
 
 
 Insight final (o mais importante de tudo)
